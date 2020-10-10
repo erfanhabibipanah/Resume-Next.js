@@ -5,12 +5,13 @@ import Link from 'next/link'
 import Header from '../components/header'
 
 const name = 'Erfan Habibi Panah Fard'
-export const siteTitle = 'Erfan\'s portfolio'
+export const siteTitle = 'Erfan\'s portfolio';
 
 export default function Layout({ children, home }) {
   return (
     <div>
       <Head>
+        <title>{siteTitle}</title>
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
@@ -27,25 +28,12 @@ export default function Layout({ children, home }) {
       <div className={styles.container}>
       <header className={styles.header}>
         {home ? (
-          <>
-            <img
-              src="/images/profile.jpg"
-              className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
-              alt={name}
-            />
+            <>
+              I am
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
           </>
         ) : (
           <>
-            <Link href="https://www.linkedin.com/in/erfanhabibipanah/">
-              <a>
-                <img
-                  src="/images/profile.jpg"
-                  className={`${styles.headerImage} ${utilStyles.borderCircle}`}
-                  alt={name}
-                />
-              </a>
-            </Link>
             <h2 className={utilStyles.headingLg}>
               <Link href="https://www.linkedin.com/in/erfanhabibipanah/">
                 <a className={utilStyles.colorInherit}>{name}</a>
