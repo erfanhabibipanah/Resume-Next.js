@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
-import styles from './layout.module.css'
+import utilStyles from '../styles/utils.module.css'
 
 const Header = () => {
     const [activeItem, setActiveItem] = useState('home');
