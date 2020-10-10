@@ -14,7 +14,7 @@ const Header = () => {
             <div class="lg:w-0 lg:flex-1">
             <a href="/" class="flex">
             <img src="/images/profile.jpg"
-              class={`h-8 w-auto sm:h-10 ${styles.headerHomeImage} ${utilStyles.borderCircle}`}
+              class={`h-8 w-auto sm:h-10 ${styles.headerImage} ${utilStyles.borderCircle}`}
               alt="Erfan's img" />
             </a>
         </div>
