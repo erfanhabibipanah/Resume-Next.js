@@ -16,6 +16,13 @@
   padding: 2px;
 }
 
+.contactPadding {
+  flex: 0 1 700px;
+  margin: auto;
+  padding: 2px;
+  padding: 200px 10px 10px 10px !important;
+}
+
 .screen {
   position: relative;
   background: #3e3e3e;
