@@ -145,7 +145,7 @@
   background: none;
   border: none;
   border-bottom: 1px solid #666;
-  color: #3e3e3e;
+  color: #ddd;
   font-size: 14px;
   outline: none;
   transition: border-color 0.2s;
@@ -156,7 +156,7 @@
 }
 
 .appFormControl:focus {
-  border-bottom-color: #3e3e3e;
+  border-bottom-color: #ddd;
 }
 
 .appFormButton {

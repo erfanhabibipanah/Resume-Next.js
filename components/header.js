@@ -5,7 +5,9 @@ import utilStyles from "../styles/utils.module.css";
 
 const Header = () => {
   const [active, setActive] = useState(false);
-  const [activeItem, setActiveItem] = useState("");
+  const [isHome, setIsHome] = useState(false);
+  const [isSites, setIsSites] = useState(false);
+  const [isEducation, setIsEducation] = useState(false);
   const [show, setShow] = useState("hidden");
 
   const onclick = (name) => {
