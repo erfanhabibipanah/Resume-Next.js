@@ -3,6 +3,7 @@ import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 import Header from '../components/header'
+import Footer from '../components/footer'
 
 const name = 'Erfan Habibi Panah Fard'
 export const siteTitle = 'Erfan\'s portfolio';
@@ -50,7 +51,8 @@ export default function Layout({ children, home }) {
           </Link>
         </div>
         )}
-        </div>
+      </div>
+      <Footer />
     </div>
   )
 }

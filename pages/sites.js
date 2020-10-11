@@ -2,13 +2,14 @@ import styles from '../components/layout.module.css'
 import Link from 'next/link'
 import Header from '../components/header';
 import Head from 'next/head';
+import Footer from '../components/footer';
 
 const siteTitle = 'Erfan\'s portfolio'
 
-const sites = () => {
+const education = () => {
     return (
         <div>
-            <Head>
+        <Head>
         <title>{siteTitle}</title>
         <link rel="icon" href="/favicon.ico" />
         <meta
@@ -26,13 +27,20 @@ const sites = () => {
         <div className={styles.container}>
             <h1>sites</h1>
             <div className={styles.backToHome}>
-            <Link href="/">
-            <a>← Back to home</a>
+            <div class="hidden md:flex items-center justify-end space-x-8 md:flex-1 lg:w-0">
+            <Link href="/" >
+            <span class="inline-flex rounded-md shadow-sm">
+            <button type="button" class="whitespace-no-wrap inline-flex items-center justify-center px-4 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-gray-600 hover:bg-gray-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition ease-in-out duration-150">
+                ← Back to home
+            </button>
+            </span>
             </Link>
+        </div>
             </div>
-        </div>
-        </div>
-    );
+            </div>
+            <Footer />
+            </div>
+        );
 }
 
-export default sites;
+export default education;

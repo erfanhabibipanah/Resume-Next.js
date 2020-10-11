@@ -19,7 +19,7 @@ const Header = () => {
             <Link href="/" >
             <a class="flex">
             <img src="/images/profile.jpg"
-              class={`h-8 w-auto sm:h-10 ${styles.headerImage} ${utilStyles.borderCircle}`}
+              class={`h-6 w-auto sm:h-6 ${styles.headerImage} ${utilStyles.borderCircle}`}
               alt="Erfan's img" />
             </a>
             </Link>
