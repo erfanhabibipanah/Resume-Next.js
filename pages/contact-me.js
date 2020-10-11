@@ -48,11 +48,85 @@ const sites = () => {
       <Header />
       <div className={`${contactStyles.body}`}>
         <div class={`${contactStyles.background}`}>
-          <div
-            class={
-              flag ? contactStyles.contactPadding : contactStyles.container
-            }
-          >
+          <div class={`${contactStyles.container} hidden md:block`}>
+            <div class={`${contactStyles.screen}`}>
+              <div class={`${contactStyles.screenHeader}`}>
+                <div class={`${contactStyles.screenHeaderLeft}`}>
+                  <div
+                    class={`${contactStyles.screenHeaderButton} ${contactStyles.close}`}
+                  ></div>
+                  <div
+                    class={`${contactStyles.screenHeaderButton} ${contactStyles.maximize}`}
+                  ></div>
+                  <div
+                    class={`${contactStyles.screenHeaderButton} ${contactStyles.minimize}`}
+                  ></div>
+                </div>
+                <div class={`${contactStyles.screenHeaderRight}`}>
+                  <div class={`${contactStyles.screenHeaderEllipsis}`}></div>
+                  <div class={`${contactStyles.screenHeaderEllipsis}`}></div>
+                  <div class={`${contactStyles.screenHeaderEllipsis}`}></div>
+                </div>
+              </div>
+              <div class={`${contactStyles.screenBody}`}>
+                <div
+                  class={`${contactStyles.screenBodyItem} ${contactStyles.left}`}
+                >
+                  <div class={`${contactStyles.appTitle}`}>
+                    <span>Contact</span>
+                    <span>Me</span>
+                  </div>
+                </div>
+                <div class={`${contactStyles.screenBodyItem}`}>
+                  <form class={`${contactStyles.appForm}`} onSubmit={sendEmail}>
+                    <div class={`${contactStyles.appformGroup}`}>
+                      <input
+                        class={`${contactStyles.appFormControl} ${contactStyles.input}`}
+                        placeholder="Name"
+                        type="text"
+                        name="name"
+                      />
+                    </div>
+                    <div class={`${contactStyles.appformGroup}`}>
+                      <input
+                        class={`${contactStyles.appFormControl} ${contactStyles.input}`}
+                        placeholder="Email"
+                        type="email"
+                        name="email"
+                      />
+                    </div>
+                    <div class={`${contactStyles.appformGroup}`}>
+                      <input
+                        class={`${contactStyles.appFormControl} ${contactStyles.input}`}
+                        placeholder="Subject"
+                        type="text"
+                        name="subject"
+                      />
+                    </div>
+                    <div
+                      class={`${contactStyles.appformGroup} ${contactStyles.message}`}
+                    >
+                      <textarea
+                        class={`${contactStyles.appFormControl} ${contactStyles.input}`}
+                        placeholder="Message"
+                        cols="30"
+                        rows="8"
+                        name="message"
+                      />
+                    </div>
+                    <div
+                      class={`${contactStyles.appformGroup} ${contactStyles.buttons} ${contactStyles.button}`}
+                    >
+                      <button class={`${contactStyles.appFormButton}`}>
+                        Send
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class={`${contactStyles.contactPadding} md:hidden`}>
             <div class={`${contactStyles.screen}`}>
               <div class={`${contactStyles.screenHeader}`}>
                 <div class={`${contactStyles.screenHeaderLeft}`}>
