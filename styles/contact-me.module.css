@@ -1,250 +1,200 @@
+.body,
+.button,
+.input {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+.background {
+  display: flex;
+  min-height: 90vh;
+}
+
 .container {
-  max-width: 1200px;
+  flex: 0 1 700px;
+  margin: auto;
+  padding: 2px;
 }
 
-/*//////////////////////////////////////////////////////////////////
-[ Contact ]*/
-
-.container100 {
-  width: 100%;
-  min-height: 100vh;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  padding: 15px;
+.screen {
   position: relative;
-  background-color: #f2f2f2;
+  background: #3e3e3e;
+  border-radius: 15px;
 }
 
-.wrap100 {
-  width: 550px;
-  background: transparent;
-  padding: 50px 0px 160px 0px;
-}
-
-/*==================================================================
-[ Form ]*/
-
-.contact100form {
-  width: 100%;
-}
-
-.contact100formtitle {
-  display: block;
-  font-family: Ubuntu-Bold;
-  font-size: 30px;
-  color: #403866;
-  line-height: 1.2;
-  text-transform: uppercase;
-  text-align: center;
-  padding-bottom: 49px;
-}
-
-/*------------------------------------------------------------------
-[ Input ]*/
-
-.wrapinput100 {
-  width: 100%;
-  background-color: #fff;
-  border-radius: 31px;
-  margin-bottom: 16px;
-  position: relative;
-  z-index: 1;
-}
-
-.input100 {
-  position: relative;
-  display: block;
-  width: 100%;
-  background: #fff;
-  border-radius: 31px;
-  font-family: Ubuntu-Bold;
-  font-size: 18px;
-  color: #8f8fa1;
-  line-height: 1.2;
-}
-
-/*---------------------------------------------*/
-input.input100 {
-  height: 62px;
-  padding: 0 35px 0 35px;
-}
-
-textarea.input100 {
-  min-height: 169px;
-  padding: 19px 35px 0 35px;
-}
-
-/*------------------------------------------------------------------
-[ Focus Input ]*/
-
-.focusinput100 {
-  display: block;
-  position: absolute;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  transform: translateX(-50%);
-  border-radius: 31px;
-  background-color: #fff;
-  pointer-events: none;
-
-  -webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  transition: all 0.4s;
-}
-
-.input100:focus + .focusinput100 {
-  width: calc(100% + 20px);
-}
-
-/*------------------------------------------------------------------
-[ Button ]*/
-.containercontact100formbtn {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding-top: 10px;
-}
-
-.contact100formbtn {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 20px;
-  min-width: 150px;
-  height: 62px;
-  background-color: transparent;
-  border-radius: 31px;
-
-  font-family: Ubuntu-Bold;
-  font-size: 16px;
-  color: #fff;
-  line-height: 1.2;
-  text-transform: uppercase;
-
-  -webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  transition: all 0.4s;
-  position: relative;
-  z-index: 1;
-}
-
-.contact100formbtn::before {
+.screen:after {
   content: "";
   display: block;
   position: absolute;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
   top: 0;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  transform: translateX(-50%);
-  border-radius: 31px;
-  background-color: #827ffe;
-  pointer-events: none;
-
-  -webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  transition: all 0.4s;
+  left: 10px;
+  right: 20px;
+  bottom: 0;
+  border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  z-index: -1;
 }
 
-.contact100formbtn:hover:before {
-  background-color: #403866;
-  width: calc(100% + 20px);
+.screenHeader {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background: #4d4d4f;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
-/*------------------------------------------------------------------
-[ Alert validate ]*/
+.screenHeaderLeft {
+  margin-right: auto;
+}
 
-.validateinput {
+.screenHeaderButton {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 3px;
+  border-radius: 8px;
+  background: white;
+}
+
+.screenHeaderButton.close {
+  background: rgb(222, 90, 83);
+}
+
+.screenHeaderButton.maximize {
+  background: rgb(219, 190, 61);
+}
+
+.screenHeaderButton.minimize {
+  background: rgb(126, 191, 63);
+}
+
+.screenHeaderRight {
+  display: flex;
+}
+
+.screenHeaderEllipsis {
+  width: 3px;
+  height: 3px;
+  margin-left: 2px;
+  border-radius: 8px;
+  background: #999;
+}
+
+.screenBody {
+  display: flex;
+}
+
+.screen-body-item {
+  flex: 1;
+  padding: 50px;
+}
+
+.screenBbodyItem.left {
+  display: flex;
+  flex-direction: column;
+}
+
+.appTitle {
+  display: flex;
+  flex-direction: column;
   position: relative;
+  color: rgb(222, 90, 83);
+  font-size: 26px;
 }
 
-.alertvalidate::before {
-  content: attr(data-validate);
-  position: absolute;
-  z-index: 1000;
-  max-width: 70%;
-  background-color: #fff;
-  border: 1px solid #c80000;
-  border-radius: 14px;
-  padding: 4px 25px 4px 10px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-  right: 10px;
-  pointer-events: none;
-
-  font-family: Ubuntu-Bold;
-  color: #c80000;
-  font-size: 13px;
-  line-height: 1.4;
-  text-align: left;
-
-  visibility: hidden;
-  opacity: 0;
-
-  -webkit-transition: opacity 0.4s;
-  -o-transition: opacity 0.4s;
-  -moz-transition: opacity 0.4s;
-  transition: opacity 0.4s;
-}
-
-.alertvalidate::after {
-  content: "\f06a";
-  font-family: FontAwesome;
+.appTitle:after {
+  content: "";
   display: block;
   position: absolute;
-  z-index: 1100;
-  color: #c80000;
-  font-size: 16px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-  right: 16px;
+  left: 0;
+  bottom: -10px;
+  width: 35px;
+  height: 4px;
 }
 
-.alertvalidate:hover:before {
-  visibility: visible;
-  opacity: 1;
+.appContact {
+  margin-top: auto;
+  font-size: 8px;
+  color: #3e3e3e;
 }
 
-@media (max-width: 992px) {
-  .alertvalidate::before {
-    visibility: visible;
-    opacity: 1;
-  }
+.appFormGroup {
+  margin-bottom: 15px;
+}
+
+.app-FormGroup.message {
+  margin-top: 40px;
+}
+
+.appFormGroup.buttons {
+  margin-bottom: 0;
+  text-align: right;
+}
+
+.appFormControl {
+  width: 100%;
+  padding: 10px 0;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #666;
+  color: #3e3e3e;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.appFormControl::placeholder {
+  color: #666;
+}
+
+.appFormControl:focus {
+  border-bottom-color: #3e3e3e;
+}
+
+.appFormButton {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 20px;
+  cursor: pointer;
+  outline: none;
+}
+
+.appFormButton:hover {
+  color: #999;
+}
+
+.dribbble {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+}
+
+.screenBody {
+  flex-direction: column;
+  padding: 40px;
+}
+
+.screenBodyItem.left {
+  margin-bottom: 30px;
+}
+
+.appTitle {
+  flex-direction: row;
+}
+
+.appTitle span {
+  margin-right: 12px;
+}
+
+.appTitle:after {
+  display: none;
+}
+
+.screen {
+  max-width: 800px;
+}
+.screenBodyItem {
+  padding: 0;
 }

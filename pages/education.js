@@ -25,18 +25,19 @@ const education = () => {
       </Head>
         <Header />
         <div className={styles.container}>
-            <h1>education</h1>
-                <div className={styles.backToHome}>
-                    <div class="hidden md:flex items-center justify-end space-x-8 md:flex-1 lg:w-0">
-            <Link href="/" >
-            <span class="inline-flex rounded-md shadow-sm">
-            <button type="button" class="whitespace-no-wrap inline-flex items-center justify-center px-4 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-gray-600 hover:bg-gray-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition ease-in-out duration-150">
-                ← Back to home
-            </button>
-            </span>
-            </Link>
-        </div>
-            </div>
+          <h1>education</h1>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
             </div>
             <Footer />
             </div>
