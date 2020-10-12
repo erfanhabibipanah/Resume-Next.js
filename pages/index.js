@@ -1,12 +1,9 @@
-import Head from "next/head";
-import Date from "../components/date";
-import Layout, { siteTitle } from "../components/layout";
+import Layout from "../components/layout";
 import utilStyles from "../styles/utils.module.css";
 
 export default function Home({ allPostsData }) {
   return (
     <Layout home>
-      <Head>…</Head>
       <section className={utilStyles.headingMd}>
         <br />
         <span>I’m a Full-Stack developer and experienced in React.js, Next.js, React-Redux, JavaScript, Node.js, Python, Django, HTML, CSS, Sass, MongoDB, Wordpress, TypeScript,  C, C++, C#.</span>

@@ -1,5 +1,3 @@
-import styles from "../components/layout.module.css";
-import Link from "next/link";
 import Header from "../components/header";
 import Head from "next/head";
 import Footer from "../components/footer";
@@ -46,67 +44,67 @@ const Contact = () => {
       </Head>
       <Header isActive={setPadding}/>
       <div className={`${contactStyles.body}`}>
-        <div class={`${contactStyles.background}`}>
-          <div class={`${padding ? contactStyles.container : contactStyles.contactPadding}`}>
-            <div class={`${contactStyles.screen}`}>
-              <div class={`${contactStyles.screenHeader}`}>
-                <div class={`${contactStyles.screenHeaderLeft}`}>
+        <div className={`${contactStyles.background}`}>
+          <div className={`${padding ? contactStyles.container : contactStyles.contactPadding}`}>
+            <div className={`${contactStyles.screen}`}>
+              <div className={`${contactStyles.screenHeader}`}>
+                <div className={`${contactStyles.screenHeaderLeft}`}>
                   <div
-                    class={`${contactStyles.screenHeaderButton} ${contactStyles.close}`}
+                    className={`${contactStyles.screenHeaderButton} ${contactStyles.close}`}
                   ></div>
                   <div
-                    class={`${contactStyles.screenHeaderButton} ${contactStyles.maximize}`}
+                    className={`${contactStyles.screenHeaderButton} ${contactStyles.maximize}`}
                   ></div>
                   <div
-                    class={`${contactStyles.screenHeaderButton} ${contactStyles.minimize}`}
+                    className={`${contactStyles.screenHeaderButton} ${contactStyles.minimize}`}
                   ></div>
                 </div>
-                <div class={`${contactStyles.screenHeaderRight}`}>
-                  <div class={`${contactStyles.screenHeaderEllipsis}`}></div>
-                  <div class={`${contactStyles.screenHeaderEllipsis}`}></div>
-                  <div class={`${contactStyles.screenHeaderEllipsis}`}></div>
+                <div className={`${contactStyles.screenHeaderRight}`}>
+                  <div className={`${contactStyles.screenHeaderEllipsis}`}></div>
+                  <div className={`${contactStyles.screenHeaderEllipsis}`}></div>
+                  <div className={`${contactStyles.screenHeaderEllipsis}`}></div>
                 </div>
               </div>
-              <div class={`${contactStyles.screenBody}`}>
+              <div className={`${contactStyles.screenBody}`}>
                 <div
-                  class={`${contactStyles.screenBodyItem} ${contactStyles.left}`}
+                  className={`${contactStyles.screenBodyItem} ${contactStyles.left}`}
                 >
-                  <div class={`${contactStyles.appTitle}`}>
+                  <div className={`${contactStyles.appTitle}`}>
                     <span>Contact</span>
                     <span>Me</span>
                   </div>
                 </div>
-                <div class={`${contactStyles.screenBodyItem}`}>
-                  <form class={`${contactStyles.appForm}`} onSubmit={sendEmail}>
-                    <div class={`${contactStyles.appformGroup}`}>
+                <div className={`${contactStyles.screenBodyItem}`}>
+                  <form className={`${contactStyles.appForm}`} onSubmit={sendEmail}>
+                    <div className={`${contactStyles.appformGroup}`}>
                       <input
-                        class={`${contactStyles.appFormControl} ${contactStyles.input}`}
+                        className={`${contactStyles.appFormControl} ${contactStyles.input}`}
                         placeholder="Name"
                         type="text"
                         name="name"
                       />
                     </div>
-                    <div class={`${contactStyles.appformGroup}`}>
+                    <div className={`${contactStyles.appformGroup}`}>
                       <input
-                        class={`${contactStyles.appFormControl} ${contactStyles.input}`}
+                        className={`${contactStyles.appFormControl} ${contactStyles.input}`}
                         placeholder="Email"
                         type="email"
                         name="email"
                       />
                     </div>
-                    <div class={`${contactStyles.appformGroup}`}>
+                    <div className={`${contactStyles.appformGroup}`}>
                       <input
-                        class={`${contactStyles.appFormControl} ${contactStyles.input}`}
+                        className={`${contactStyles.appFormControl} ${contactStyles.input}`}
                         placeholder="Subject"
                         type="text"
                         name="subject"
                       />
                     </div>
                     <div
-                      class={`${contactStyles.appformGroup} ${contactStyles.message}`}
+                      className={`${contactStyles.appformGroup} ${contactStyles.message}`}
                     >
                       <textarea
-                        class={`${contactStyles.appFormControl} ${contactStyles.input}`}
+                        className={`${contactStyles.appFormControl} ${contactStyles.input}`}
                         placeholder="Message"
                         cols="30"
                         rows="8"
@@ -114,9 +112,9 @@ const Contact = () => {
                       />
                     </div>
                     <div
-                      class={`${contactStyles.appformGroup} ${contactStyles.buttons} ${contactStyles.button}`}
+                      className={`${contactStyles.appformGroup} ${contactStyles.buttons} ${contactStyles.button}`}
                     >
-                      <button class={`${contactStyles.appFormButton}`}>
+                      <button className={`${contactStyles.appFormButton}`}>
                         Send
                       </button>
                     </div>
