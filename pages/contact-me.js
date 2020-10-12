@@ -6,13 +6,12 @@ import Footer from "../components/footer";
 import { useState } from "react";
 import emailjs from "emailjs-com";
 import contactStyles from "../styles/contact-me.module.css";
+import { getActive } from "../components/header";
 
 const siteTitle = "Erfan's portfolio";
 
-const sites = () => {
-  const [flag, setFlag] = useState(false);
-
-  // active ? setFlag(active) : setFlag(active);
+const Contact = () => {
+  const [padding, setPadding] = useState(true);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -45,88 +44,10 @@ const sites = () => {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <Header />
+      <Header isActive={setPadding}/>
       <div className={`${contactStyles.body}`}>
         <div class={`${contactStyles.background}`}>
-          <div class={`${contactStyles.container} hidden md:block`}>
-            <div class={`${contactStyles.screen}`}>
-              <div class={`${contactStyles.screenHeader}`}>
-                <div class={`${contactStyles.screenHeaderLeft}`}>
-                  <div
-                    class={`${contactStyles.screenHeaderButton} ${contactStyles.close}`}
-                  ></div>
-                  <div
-                    class={`${contactStyles.screenHeaderButton} ${contactStyles.maximize}`}
-                  ></div>
-                  <div
-                    class={`${contactStyles.screenHeaderButton} ${contactStyles.minimize}`}
-                  ></div>
-                </div>
-                <div class={`${contactStyles.screenHeaderRight}`}>
-                  <div class={`${contactStyles.screenHeaderEllipsis}`}></div>
-                  <div class={`${contactStyles.screenHeaderEllipsis}`}></div>
-                  <div class={`${contactStyles.screenHeaderEllipsis}`}></div>
-                </div>
-              </div>
-              <div class={`${contactStyles.screenBody}`}>
-                <div
-                  class={`${contactStyles.screenBodyItem} ${contactStyles.left}`}
-                >
-                  <div class={`${contactStyles.appTitle}`}>
-                    <span>Contact</span>
-                    <span>Me</span>
-                  </div>
-                </div>
-                <div class={`${contactStyles.screenBodyItem}`}>
-                  <form class={`${contactStyles.appForm}`} onSubmit={sendEmail}>
-                    <div class={`${contactStyles.appformGroup}`}>
-                      <input
-                        class={`${contactStyles.appFormControl} ${contactStyles.input}`}
-                        placeholder="Name"
-                        type="text"
-                        name="name"
-                      />
-                    </div>
-                    <div class={`${contactStyles.appformGroup}`}>
-                      <input
-                        class={`${contactStyles.appFormControl} ${contactStyles.input}`}
-                        placeholder="Email"
-                        type="email"
-                        name="email"
-                      />
-                    </div>
-                    <div class={`${contactStyles.appformGroup}`}>
-                      <input
-                        class={`${contactStyles.appFormControl} ${contactStyles.input}`}
-                        placeholder="Subject"
-                        type="text"
-                        name="subject"
-                      />
-                    </div>
-                    <div
-                      class={`${contactStyles.appformGroup} ${contactStyles.message}`}
-                    >
-                      <textarea
-                        class={`${contactStyles.appFormControl} ${contactStyles.input}`}
-                        placeholder="Message"
-                        cols="30"
-                        rows="8"
-                        name="message"
-                      />
-                    </div>
-                    <div
-                      class={`${contactStyles.appformGroup} ${contactStyles.buttons} ${contactStyles.button}`}
-                    >
-                      <button class={`${contactStyles.appFormButton}`}>
-                        Send
-                      </button>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class={`${contactStyles.contactPadding} md:hidden`}>
+          <div class={`${padding ? contactStyles.container : contactStyles.contactPadding}`}>
             <div class={`${contactStyles.screen}`}>
               <div class={`${contactStyles.screenHeader}`}>
                 <div class={`${contactStyles.screenHeaderLeft}`}>
@@ -211,4 +132,12 @@ const sites = () => {
   );
 };
 
-export default sites;
+export async function getStaticProps({ active = true }) {
+  console.log(active);
+  const activeItem = await getActive(active)
+  return {
+    props: { activeItem },
+  }
+}
+
+export default Contact;

@@ -3,7 +3,7 @@ import Link from "next/link";
 import styles from "./layout.module.css";
 import utilStyles from "../styles/utils.module.css";
 
-const Header = () => {
+const Header = ({isActive}) => {
   const [active, setActive] = useState(false);
   const [isHome, setIsHome] = useState(false);
   const [isSites, setIsSites] = useState(false);
@@ -34,7 +34,10 @@ const Header = () => {
           </div>
           <div class="-mr-2 -my-2 md:hidden">
             <button
-              onClick={() => onclick("")}
+              onClick={() => {
+                onclick("");
+                isActive(false);
+              }}
               type="button"
               class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"
             >
@@ -120,6 +123,7 @@ const Header = () => {
                   <button
                     onClick={() => {
                       onclick("hidden");
+                      isActive(true);
                     }}
                     type="button"
                     class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"
@@ -189,8 +193,9 @@ const Header = () => {
   );
 };
 
-export async function getActive({ active }) {
-  return { active };
+export async function getActive() {
+  const active = true;
+  return { props: { active } }
 }
 
 export default Header;
