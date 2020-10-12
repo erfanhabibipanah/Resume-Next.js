@@ -16,6 +16,7 @@ export default function Home({ allPostsData }) {
         occaecat cupidatat non proident, sunt in culpa qui officia deserunt
         mollit anim id est laborum.
       </section>
+      <br />
     </Layout>
   );
 }

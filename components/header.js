@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect} from "react";
 import Link from "next/link";
 import styles from "./layout.module.css";
 import utilStyles from "../styles/utils.module.css";
@@ -10,12 +10,32 @@ const Header = ({isActive}) => {
   const [isEducation, setIsEducation] = useState(false);
   const [show, setShow] = useState("hidden");
 
+  console.log(isHome);
+
   const onclick = (name) => {
     setShow(name);
     name === "hidden" ? setActive(true) : setActive(false);
   };
 
-  const handleItemClick = (e, { name }) => setActiveItem(name);
+  useEffect(() => {
+    if (window.location.pathname === "/") {
+      setIsHome(true);
+      setIsSites(false);
+      setIsEducation(false);
+    } else if (window.location.pathname === "/sites") {
+      setIsHome(false);
+      setIsSites(true);
+      setIsEducation(false);
+    } else if (window.location.pathname === "/education") {
+      setIsHome(false);
+      setIsSites(false);
+      setIsEducation(true);
+    }
+  }, [])
+
+  const isCheck = (name) => {
+      
+  }
 
   return (
     <div class="relative bg-white">
@@ -62,7 +82,12 @@ const Header = ({isActive}) => {
               <Link href="/">
                 <button
                   type="button"
-                  class="text-gray-500 group inline-flex items-center space-x-2 text-base leading-6 font-medium hover:text-gray-900 focus:outline-none focus:text-gray-900 active:text-gray-900 transition ease-in-out duration-150"
+                  onClick={() =>
+                    {
+                      isCheck("home")
+                    }
+                  }
+                  class={`${isHome ? "text-gray-900" : "text-gray-500" } group inline-flex items-center space-x-2 text-base leading-6 font-medium hover:text-gray-900 focus:outline-none focus:text-gray-900 active:text-gray-900 transition ease-in-out duration-150`}
                 >
                   <span>Home</span>
                 </button>
@@ -72,7 +97,12 @@ const Header = ({isActive}) => {
               <Link href="/sites">
                 <button
                   type="button"
-                  class="text-gray-500 group inline-flex items-center space-x-2 text-base leading-6 font-medium hover:text-gray-900 focus:outline-none focus:text-gray-900 active:text-gray-900 transition ease-in-out duration-150"
+                  onClick={() =>
+                    {
+                      isCheck("sites")
+                    }
+                  }
+                  class={`${isSites ? "text-gray-900" : "text-gray-500" } group inline-flex items-center space-x-2 text-base leading-6 font-medium hover:text-gray-900 focus:outline-none focus:text-gray-900 active:text-gray-900 transition ease-in-out duration-150`}
                 >
                   <span>Sites</span>
                 </button>
@@ -82,7 +112,12 @@ const Header = ({isActive}) => {
               <Link href="/education">
                 <button
                   type="button"
-                  class="text-gray-500 group inline-flex items-center space-x-2 text-base leading-6 font-medium hover:text-gray-900 focus:outline-none focus:text-gray-900 active:text-gray-900 transition ease-in-out duration-150"
+                  onClick={() =>
+                    {
+                      isCheck("education")
+                    }
+                  }
+                  class={`${isEducation ? "text-gray-900" : "text-gray-500" } group inline-flex items-center space-x-2 text-base leading-6 font-medium hover:text-gray-900 focus:outline-none focus:text-gray-900 active:text-gray-900 transition ease-in-out duration-150`}
                 >
                   <span>Education</span>
                 </button>
