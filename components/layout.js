@@ -4,11 +4,14 @@ import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
 import Header from "../components/header";
 import Footer from "../components/footer";
+import { useState } from "react";
 
 const name = "Erfan Habibi Panah Fard";
 export const siteTitle = "Erfan's portfolio";
 
 export default function Layout({ children, home }) {
+  const [padding, setPadding] = useState(true);
+
   return (
     <div>
       <Head>
@@ -19,7 +22,7 @@ export default function Layout({ children, home }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <Header />
+      <Header isActive={setPadding}/>
       <div className={styles.container}>
         <header className={styles.header}>
           {home ? (

@@ -2,10 +2,12 @@ import styles from "../components/layout.module.css";
 import Header from "../components/header";
 import Head from "next/head";
 import Footer from "../components/footer";
+import { useState } from "react";
 
 const siteTitle = "Erfan's portfolio";
 
 const education = () => {
+  const [padding, setPadding] = useState(true);
   return (
     <div>
       <Head>
@@ -16,7 +18,7 @@ const education = () => {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <Header />
+      <Header isActive={setPadding}/>
       <div className={styles.container}>
         <h1>sites</h1>
         <br />

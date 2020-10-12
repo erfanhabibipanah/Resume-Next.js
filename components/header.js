@@ -10,8 +10,6 @@ const Header = ({isActive}) => {
   const [isEducation, setIsEducation] = useState(false);
   const [show, setShow] = useState("hidden");
 
-  console.log(isHome);
-
   const onclick = (name) => {
     setShow(name);
     name === "hidden" ? setActive(true) : setActive(false);
@@ -32,10 +30,6 @@ const Header = ({isActive}) => {
       setIsEducation(true);
     }
   }, [])
-
-  const isCheck = (name) => {
-      
-  }
 
   return (
     <div class="relative bg-white">
@@ -186,7 +180,7 @@ const Header = ({isActive}) => {
                 <Link href="/">
                   <button
                     type="button"
-                    class="text-gray-500 text-base leading-6 font-medium hover:text-gray-900 transition ease-in-out duration-150"
+                    class={`${isHome ? "text-gray-900" : "text-gray-500" } text-base leading-6 font-medium hover:text-gray-900 transition ease-in-out duration-150`}
                   >
                     <span>Home</span>
                   </button>
@@ -194,7 +188,7 @@ const Header = ({isActive}) => {
                 <Link href="/sites">
                   <button
                     type="button"
-                    class="text-gray-500 text-base leading-6 font-medium hover:text-gray-900 transition ease-in-out duration-150"
+                    class={`${isSites ? "text-gray-900" : "text-gray-500" } text-base leading-6 font-medium hover:text-gray-900 transition ease-in-out duration-150`}
                   >
                     <span>Sites</span>
                   </button>
@@ -202,7 +196,7 @@ const Header = ({isActive}) => {
                 <Link href="/education">
                   <button
                     type="button"
-                    class="text-gray-500 text-base leading-6 font-medium hover:text-gray-900 transition ease-in-out duration-150"
+                    class={`${isEducation ? "text-gray-900" : "text-gray-500" } text-base leading-6 font-medium hover:text-gray-900 transition ease-in-out duration-150`}
                   >
                     <span>Education</span>
                   </button>
