@@ -8,13 +8,15 @@ export default function Home({ allPostsData }) {
     <Layout home>
       <Head>…</Head>
       <section className={utilStyles.headingMd}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
+        <br />
+        <span>I’m a full-Stack developer and experienced in React.js, Next.js, React-Redux, JavaScript, Node.js, Python, Django, HTML, CSS, Sass, MongoDB, Wordpress, TypeScript,  C, C++, C#.</span>
+        <br />
+        <br />
+        <span>I have experienced in web designing(UI/UX) and know Adobe Photoshop and Adobe Illustrator .</span>
+        <br />
+        <br />
+        <span>As an undergraduate student I like working and improve my skills besides my academic studying and with self-study, I can learn anything quickly.</span>
+        <br />
       </section>
       <br />
     </Layout>
