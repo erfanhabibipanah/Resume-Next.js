@@ -3,6 +3,7 @@ import Header from "../components/header";
 import Head from "next/head";
 import Footer from "../components/footer";
 import { useState } from "react";
+import TimeLine from '../components/timeLine';
 
 const siteTitle = "Erfan's portfolio";
 
@@ -19,21 +20,7 @@ const education = () => {
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <Header isActive={setPadding}/>
-      <div className={styles.container}>
-        <h1>sites</h1>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-      </div>
+      <TimeLine></TimeLine>
       <Footer />
     </div>
   );

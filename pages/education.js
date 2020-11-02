@@ -20,7 +20,9 @@ const education = () => {
       </Head>
       <Header isActive={setPadding}/>
       <div className={styles.container}>
-        <h1>education</h1>
+        <ol>
+          <li>educationd</li>
+        </ol>
         <br />
         <br />
         <br />
