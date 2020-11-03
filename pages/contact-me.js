@@ -43,7 +43,7 @@ const Contact = () => {
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <Header isActive={setPadding}/>
-      <div className={`${contactStyles.body}`} style={{ backgroundColor: "rgb(226, 226, 226)"}}>
+      <div className={`${contactStyles.body}`}>
         <div className={`${contactStyles.background}`}>
           <div className={`${padding ? contactStyles.container : contactStyles.contactPadding}`}>
             <div className={`${contactStyles.screen}`}>

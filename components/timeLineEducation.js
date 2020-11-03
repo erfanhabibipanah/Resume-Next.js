@@ -3,6 +3,7 @@ import 'react-vertical-timeline-component/style.min.css';
 import SchoolIcon from '@material-ui/icons/School';
 import Button from '@material-ui/core/Button';
 import CertificateIcon from "../public/images/certificate.svg";
+import timeLineStyles from './timeLine.module.css'
 
 const TimeLineEducation = () => {
     return (
@@ -12,6 +13,7 @@ const TimeLineEducation = () => {
                 contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                 contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
                 date="2018 - present"
+                dateClassName={timeLineStyles.colorBlack}
                 iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                 icon={<SchoolIcon />}
             >
@@ -92,6 +94,7 @@ const TimeLineEducation = () => {
                 <h4 style={{ fontWeight: "500" }} className="vertical-timeline-element-subtitle">IEEE</h4>
                 <br />
                     Credential ID: KNTU-ACM-19NrxF-0022938672
+                <br />
                 <div>
                 <br />
                     <Button
@@ -115,6 +118,7 @@ const TimeLineEducation = () => {
                 <h4 style={{ fontWeight: "500" }} className="vertical-timeline-element-subtitle">Tehran, Iran</h4>
                 <br />
                     Diploma in Physics and Mathematics Discipline
+                <br />
             </VerticalTimelineElement>
         </VerticalTimeline>
     );
