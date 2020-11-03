@@ -1,0 +1,124 @@
+.ResumeLanguagesAndHobbiesBlock .container {
+  text-align: center;
+}
+
+.ResumeLanguagesAndHobbiesBlocklanguages {
+  display: inline-flex;
+  flex-flow: column nowrap;
+}
+
+.ResumeLanguagesAndHobbiesBlocklanguages:after {
+  clear: both;
+}
+
+.ResumeLanguagesAndHobbiesBlocklanguage {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+  justify-content: space-between;
+}
+
+.ResumeLanguagesAndHobbiesBlocklanguageTitleAndLevel {
+  text-align: left;
+  padding-right: 25px;
+}
+
+.ResumeLanguagesAndHobbiesBlocklanguageTitle {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.ResumeLanguagesAndHobbiesBlocklanguageLevel {
+  color: #8a8a8b;
+  width: 100%;
+  text-align: left;
+}
+
+.ResumeLanguagesAndHobbiesBlockhobbies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 50px;
+}
+
+.ResumeCustomersBlockcustomercontainer {
+  display: inline-block;
+  perspective: 900px;
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+}
+
+.ResumeLanguagesAndHobbiesBlockhobby {
+  transition: all 0.6s ease;
+  transform-style: preserve-3d;
+}
+
+.ResumeLanguagesAndHobbiesBlockhobbyfront,
+.ResumeLanguagesAndHobbiesBlockhobbyback {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+}
+
+.ResumeLanguagesAndHobbiesBlockhobbycontainer:hover
+  .ResumeLanguagesAndHobbiesBlockhobby {
+  transform: rotateY(180deg);
+}
+
+.ResumeLanguagesAndHobbiesBlockhobbyback {
+  transform: rotateY(180deg);
+}
+
+.ResumeLanguagesAndHobbiesBlockhobby > div > div {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 16px !important;
+  height: 100%;
+}
+
+.ResumeLanguagesAndHobbiesBlockhobby {
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+  text-align: center;
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.ResumeLanguagesAndHobbiesBlockhobby h4 {
+  margin: 4px;
+}
+
+.ResumeLanguagesAndHobbiesBlockhobby .materialicons {
+  font-size: 48px;
+}
+
+@media only screen and (max-width: 800px) {
+  .ResumeLanguagesAndHobbiesBlockhobbies {
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .ResumeLanguagesAndHobbiesBlocklanguage {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .ResumeLanguagesAndHobbiesBlockhobbies {
+    padding: 20px;
+  }
+}

@@ -1,0 +1,59 @@
+.ResumeSkillsBlockskills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.ResumeSkillsBlockskills > div {
+  width: 23%;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.ResumeSkillsBlockskills svg {
+  width: 60px;
+  height: 60px;
+}
+
+.ResumeSkillsBlockskills svg path,
+.ResumeSkillsBlockskills svg g {
+  fill: #fff !important;
+}
+
+.ResumeSkillsBlockskills > *:last-child svg path:first-child {
+  fill: none !important;
+}
+
+.ResumeSkillsBlocktools {
+  text-align: center;
+}
+
+.ResumeSkillsBlocktools p {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+@media only screen and (max-width: 800px) {
+  .ResumeSkillsBlockskills {
+    justify-content: space-around;
+  }
+
+  .ResumeSkillsBlockskills > div {
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .ResumeSkillsBlockskills {
+    justify-content: center;
+  }
+
+  .ResumeSkillsBlockskills > div {
+    width: 90%;
+  }
+
+  .ResumeSkillsBlockskills svg {
+    width: 60px;
+    height: 60px;
+  }
+}

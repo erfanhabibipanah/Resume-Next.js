@@ -1,4 +1,3 @@
-import styles from "../components/layout.module.css";
 import Header from "../components/header";
 import Head from "next/head";
 import Footer from "../components/footer";
