@@ -10,10 +10,7 @@ import OtherIcon from '../public/images/code.svg';
 
 const Skill = () => {
     return (
-        <div style={{
-            margin: "0 0 0 80px",
-            }}
-            className="container">
+        <div className={skillStyles.container}>
             <div style={{
                 textAlign: "center",
                 paddingBottom: "45px",
@@ -37,7 +34,7 @@ const Skill = () => {
                 >I can say i’m quite good at
                 </p>
             </div>
-            <div className={skillStyles.ResumeSkillsBlockskills} style={{ paddingBottom: "100px", justifyContent: "space-between", flexWrap: "wrap", display: "flex" }}>
+            <div className={skillStyles.ResumeSkillsBlockskills} style={{ padding: "16px 24px 24px 24px", paddingBottom: "100px", justifyContent: "space-between", flexWrap: "wrap", display: "flex" }}>
                 <Card style={{ padding: "16px 24px 24px 24px" }}>
                     <CardContent>
                         <Avatar

@@ -12,12 +12,11 @@ import RestaurantIcon from '@material-ui/icons/Restaurant';
 const LanguagesAndHobbies = () => {
     return (
         <div style={{paddingBottom: "80px"}}>
-            <div className="container" style={{
-                margin: "0 0 0 80px",
+            <div className={styles.container} style={{
                 textAlign: "center",
                 paddingBottom: "150px"
             }}>
-                <div className="heading" style={{
+                <div className={styles.heading} style={{
                 textAlign: "center",
                 paddingBottom: "45px",
             }}>
