@@ -23,7 +23,7 @@ export default function Layout({ children, home }) {
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <Header isActive={setPadding}/>
-      <div className={styles.container}>
+      <div className={`${padding ? styles.container : styles.containerPadding}`}>
         <header className={styles.header}>
           {home ? (
             <>

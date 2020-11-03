@@ -4,6 +4,13 @@
   margin: 3rem auto 6rem;
 }
 
+.containerPadding {
+  max-width: 36rem;
+  padding: 0 1rem;
+  margin: 3rem auto 6rem;
+  padding: 200px 10px 50px 10px !important;
+}
+
 .header {
   display: flex;
   flex-direction: column;
