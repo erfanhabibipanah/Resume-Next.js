@@ -3,7 +3,8 @@ import utilStyles from "../styles/utils.module.css";
 
 export default function Home({ allPostsData }) {
   return (
-    <Layout home>
+    <div style={{ backgroundColor: "rgb(226, 226, 226)"}}>
+    <Layout home >
       <section className={utilStyles.headingMd}>
         <br />
         <span>I’m a Full-Stack developer and experienced in React.js, Next.js, React-Redux, JavaScript, Node.js, Python, Django, HTML, CSS, Sass, MongoDB, Wordpress, TypeScript,  C, C++, C#.</span>
@@ -16,6 +17,7 @@ export default function Home({ allPostsData }) {
         <br />
       </section>
       <br />
-    </Layout>
+      </Layout>
+      </div>
   );
 }

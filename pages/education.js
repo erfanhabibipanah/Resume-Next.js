@@ -3,13 +3,15 @@ import Header from "../components/header";
 import Head from "next/head";
 import Footer from "../components/footer";
 import { useState } from "react";
+import TimeLineEducation from '../components/timeLineEducation';
+import sitesStyle from "../styles/sites.module.css";
 
 const siteTitle = "Erfan's portfolio";
 
-const education = () => {
+const Education = () => {
   const [padding, setPadding] = useState(true);
   return (
-    <div>
+    <div style={{ backgroundColor: "rgb(226, 226, 226)"}}>
       <Head>
         <title>{siteTitle}</title>
         <link rel="icon" href="/favicon.ico" />
@@ -19,26 +21,13 @@ const education = () => {
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <Header isActive={setPadding}/>
-      <div className={styles.container}>
-        <ol>
-          <li>educationd</li>
-        </ol>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
+      <div className={`${padding ? "" : sitesStyle.paddingMobile}`}>
+        <TimeLineEducation />
+        <div style={{ paddingBottom: "150px" }} />
+        <Footer />
       </div>
-      <Footer />
     </div>
   );
 };
 
-export default education;
+export default Education;
