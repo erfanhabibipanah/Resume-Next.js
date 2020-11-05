@@ -46,7 +46,7 @@ const Header = ({ isActive }) => {
             <Link href="https://www.linkedin.com/in/erfanhabibipanah">
               <a className="flex">
                 <img
-                  src="/images/profile.jpg"
+                  src="/images/profile.webp"
                   className={`h-6 w-auto sm:h-6 ${styles.headerImage} ${utilStyles.borderCircle}`}
                   alt="Erfan's img"
                 />
@@ -142,7 +142,7 @@ const Header = ({ isActive }) => {
                 <Link href="https://www.linkedin.com/in/erfanhabibipanah">
                   <a className="flex">
                     <img
-                      src="/images/profile.jpg"
+                      src="/images/profile.webp"
                       className={`h-8 w-auto ${styles.headerSImage} ${utilStyles.borderCircle}`}
                       alt="Erfan's img"
                     />
