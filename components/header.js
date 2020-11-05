@@ -1,9 +1,9 @@
-import React, { useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import styles from "../styles/layout.module.css";
 import utilStyles from "../styles/utils.module.css";
 
-const Header = ({isActive}) => {
+const Header = ({ isActive }) => {
   const [isHome, setIsHome] = useState(false);
   const [isSites, setIsSites] = useState(false);
   const [isEducation, setIsEducation] = useState(false);
@@ -36,7 +36,7 @@ const Header = ({isActive}) => {
       setIsEducation(false);
       setIsContact(true);
     }
-  }, [])
+  }, []);
 
   return (
     <div className="relative bg-white">
@@ -83,7 +83,9 @@ const Header = ({isActive}) => {
               <Link href="/">
                 <button
                   type="button"
-                  className={`${isHome ? "text-gray-900" : "text-gray-500" } group inline-flex items-center space-x-2 text-base leading-6 font-medium hover:text-gray-900 focus:outline-none focus:text-gray-900 active:text-gray-900 transition ease-in-out duration-150`}
+                  className={`${
+                    isHome ? "text-gray-900" : "text-gray-500"
+                  } group inline-flex items-center space-x-2 text-base leading-6 font-medium hover:text-gray-900 focus:outline-none focus:text-gray-900 active:text-gray-900 transition ease-in-out duration-150`}
                 >
                   <span>About Me</span>
                 </button>
@@ -93,7 +95,9 @@ const Header = ({isActive}) => {
               <Link href="/sites">
                 <button
                   type="button"
-                  className={`${isSites ? "text-gray-900" : "text-gray-500" } group inline-flex items-center space-x-2 text-base leading-6 font-medium hover:text-gray-900 focus:outline-none focus:text-gray-900 active:text-gray-900 transition ease-in-out duration-150`}
+                  className={`${
+                    isSites ? "text-gray-900" : "text-gray-500"
+                  } group inline-flex items-center space-x-2 text-base leading-6 font-medium hover:text-gray-900 focus:outline-none focus:text-gray-900 active:text-gray-900 transition ease-in-out duration-150`}
                 >
                   <span>Sites</span>
                 </button>
@@ -103,7 +107,9 @@ const Header = ({isActive}) => {
               <Link href="/education">
                 <button
                   type="button"
-                  className={`${isEducation ? "text-gray-900" : "text-gray-500" } group inline-flex items-center space-x-2 text-base leading-6 font-medium hover:text-gray-900 focus:outline-none focus:text-gray-900 active:text-gray-900 transition ease-in-out duration-150`}
+                  className={`${
+                    isEducation ? "text-gray-900" : "text-gray-500"
+                  } group inline-flex items-center space-x-2 text-base leading-6 font-medium hover:text-gray-900 focus:outline-none focus:text-gray-900 active:text-gray-900 transition ease-in-out duration-150`}
                 >
                   <span>Education</span>
                 </button>
@@ -115,7 +121,9 @@ const Header = ({isActive}) => {
               <span className="inline-flex rounded-md shadow-sm">
                 <button
                   type="button"
-                  className={`${isContact ? "text-gray-900 bg-gray-700" : "bg-gray-700"} whitespace-no-wrap inline-flex items-center justify-center px-4 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-white hover:bg-gray-600 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition ease-in-out duration-150`}
+                  className={`${
+                    isContact ? "text-gray-900 bg-gray-700" : "bg-gray-700"
+                  } whitespace-no-wrap inline-flex items-center justify-center px-4 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-white hover:bg-gray-600 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition ease-in-out duration-150`}
                 >
                   Contact Me
                 </button>
@@ -172,7 +180,9 @@ const Header = ({isActive}) => {
                 <Link href="/">
                   <button
                     type="button"
-                    className={`${isHome ? "text-gray-900" : "text-gray-500" } text-base leading-6 font-medium hover:text-gray-900 transition ease-in-out duration-150`}
+                    className={`${
+                      isHome ? "text-gray-900" : "text-gray-500"
+                    } text-base leading-6 font-medium hover:text-gray-900 transition ease-in-out duration-150`}
                   >
                     <span>About Me</span>
                   </button>
@@ -180,7 +190,9 @@ const Header = ({isActive}) => {
                 <Link href="/sites">
                   <button
                     type="button"
-                    className={`${isSites ? "text-gray-900" : "text-gray-500" } text-base leading-6 font-medium hover:text-gray-900 transition ease-in-out duration-150`}
+                    className={`${
+                      isSites ? "text-gray-900" : "text-gray-500"
+                    } text-base leading-6 font-medium hover:text-gray-900 transition ease-in-out duration-150`}
                   >
                     <span>Sites</span>
                   </button>
@@ -188,7 +200,9 @@ const Header = ({isActive}) => {
                 <Link href="/education">
                   <button
                     type="button"
-                    className={`${isEducation ? "text-gray-900" : "text-gray-500" } text-base leading-6 font-medium hover:text-gray-900 transition ease-in-out duration-150`}
+                    className={`${
+                      isEducation ? "text-gray-900" : "text-gray-500"
+                    } text-base leading-6 font-medium hover:text-gray-900 transition ease-in-out duration-150`}
                   >
                     <span>Education</span>
                   </button>
@@ -199,7 +213,9 @@ const Header = ({isActive}) => {
                   <span className="w-full flex rounded-md shadow-sm">
                     <button
                       type="button"
-                      className={`${isContact ? "text-gray-900 bg-gray-700" : "bg-gray-700"} w-full flex items-center justify-center px-4 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-white hover:bg-gray-600 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition ease-in-out duration-150`}
+                      className={`${
+                        isContact ? "text-gray-900 bg-gray-700" : "bg-gray-700"
+                      } w-full flex items-center justify-center px-4 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-white hover:bg-gray-600 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition ease-in-out duration-150`}
                     >
                       Contact Me
                     </button>
@@ -216,7 +232,7 @@ const Header = ({isActive}) => {
 
 export async function getActive() {
   const active = true;
-  return { props: { active } }
+  return { props: { active } };
 }
 
 export default Header;

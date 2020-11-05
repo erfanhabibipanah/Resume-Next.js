@@ -3,7 +3,9 @@ import footerStyles from "./footer.module.css";
 
 const Footer = () => {
   return (
-    <div className={`${footerStyles.footer} fixed relative inset-x-0 bottom-0 w-full bg-gray-100`}>
+    <div
+      className={`${footerStyles.footer} fixed relative inset-x-0 bottom-0 w-full bg-gray-100`}
+    >
       <div className="w-5 h-5 top-5 left-5 ">
         <br />
       </div>

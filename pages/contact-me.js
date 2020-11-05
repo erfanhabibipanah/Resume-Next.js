@@ -42,10 +42,14 @@ const Contact = () => {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <Header isActive={setPadding}/>
+      <Header isActive={setPadding} />
       <div className={`${contactStyles.body}`}>
         <div className={`${contactStyles.background}`}>
-          <div className={`${padding ? contactStyles.container : contactStyles.contactPadding}`}>
+          <div
+            className={`${
+              padding ? contactStyles.container : contactStyles.contactPadding
+            }`}
+          >
             <div className={`${contactStyles.screen}`}>
               <div className={`${contactStyles.screenHeader}`}>
                 <div className={`${contactStyles.screenHeaderLeft}`}>
@@ -60,9 +64,15 @@ const Contact = () => {
                   ></div>
                 </div>
                 <div className={`${contactStyles.screenHeaderRight}`}>
-                  <div className={`${contactStyles.screenHeaderEllipsis}`}></div>
-                  <div className={`${contactStyles.screenHeaderEllipsis}`}></div>
-                  <div className={`${contactStyles.screenHeaderEllipsis}`}></div>
+                  <div
+                    className={`${contactStyles.screenHeaderEllipsis}`}
+                  ></div>
+                  <div
+                    className={`${contactStyles.screenHeaderEllipsis}`}
+                  ></div>
+                  <div
+                    className={`${contactStyles.screenHeaderEllipsis}`}
+                  ></div>
                 </div>
               </div>
               <div className={`${contactStyles.screenBody}`}>
@@ -75,7 +85,10 @@ const Contact = () => {
                   </div>
                 </div>
                 <div className={`${contactStyles.screenBodyItem}`}>
-                  <form className={`${contactStyles.appForm}`} onSubmit={sendEmail}>
+                  <form
+                    className={`${contactStyles.appForm}`}
+                    onSubmit={sendEmail}
+                  >
                     <div className={`${contactStyles.appformGroup}`}>
                       <input
                         className={`${contactStyles.appFormControl} ${contactStyles.input}`}
@@ -133,10 +146,10 @@ const Contact = () => {
 
 export async function getStaticProps({ active = true }) {
   console.log(active);
-  const activeItem = await getActive(active)
+  const activeItem = await getActive(active);
   return {
     props: { activeItem },
-  }
+  };
 }
 
 export default Contact;
