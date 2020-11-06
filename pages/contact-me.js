@@ -1,12 +1,14 @@
 import Header from "../components/header";
-import Head from "next/head";
 import Footer from "../components/footer";
 import { useState } from "react";
 import emailjs from "emailjs-com";
 import contactStyles from "../styles/contact-me.module.css";
 import { getActive } from "../components/header";
+import { NextSeo } from "next-seo";
 
-const siteTitle = "Erfan's portfolio";
+const siteTitle = "Erfan's Contact Me";
+const siteDescription =
+  "I am Erfan Habibi Panah Fard and I’m a Front-End developer. You can contact me from this page.";
 
 const Contact = () => {
   const [padding, setPadding] = useState(true);
@@ -19,7 +21,7 @@ const Contact = () => {
         "gmail",
         "template-erfan-site",
         e.target,
-        "user_jVscyLQtWJGg1JAAAUiJ3"
+        "user_jVscyLQtWJGg1JAAAUiJ3",
       )
       .then(
         (result) => {
@@ -27,21 +29,37 @@ const Contact = () => {
         },
         (error) => {
           console.log(error.text);
-        }
+        },
       );
     e.target.reset();
   };
 
   return (
     <div>
-      <Head>
-        <title>{siteTitle}</title>
-        <link rel="icon" href="/favicon.ico" />
-        <meta name="description" content={siteTitle} />
-        <meta property="og:image" content="/images/profile.jpg" />
-        <meta name="og:title" content={siteTitle} />
-        <meta name="twitter:card" content="summary_large_image" />
-      </Head>
+      <NextSeo
+        title={siteTitle}
+        description={siteDescription}
+        canonical="https://www.erfanhabibipanah.vercel.app/"
+        openGraph={{
+          url: "https://www.erfanhabibipanah.vercel.app/",
+          title: { siteTitle },
+          description: { siteDescription },
+          images: [
+            {
+              url: "/favicon.ico",
+              width: 800,
+              height: 600,
+              alt: "Erfan's picture",
+            },
+          ],
+          site_name: { siteTitle },
+        }}
+        twitter={{
+          handle: "@handle",
+          site: "@site",
+          cardType: "summary_large_image",
+        }}
+      />
       <Header isActive={setPadding} />
       <div className={`${contactStyles.body}`}>
         <div className={`${contactStyles.background}`}>

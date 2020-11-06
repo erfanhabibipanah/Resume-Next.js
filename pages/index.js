@@ -6,22 +6,42 @@ import Skill from "../components/skill";
 import Footer from "../components/footer";
 import layoutStyles from "../styles/layout.module.css";
 import LanguageAndHobbies from "../components/languageAndHobbies";
+import { NextSeo } from "next-seo";
 
-export const siteTitle = "Erfan's portfolio";
+const siteTitle = "Erfan's Portfolio";
+const siteDescription =
+  "I am Erfan Habibi Panah Fard and I’m a Front-End developer. This is my Portfolio site";
+
 const name = "Erfan Habibi Panah Fard";
 
 export default function Home({ allPostsData }) {
   const [padding, setPadding] = useState(true);
   return (
     <div>
-      <Head>
-        <title>{siteTitle}</title>
-        <link rel="icon" href="/favicon.ico" />
-        <meta name="description" content={siteTitle} />
-        <meta property="og:image" content="/images/profile.jpg" />
-        <meta name="og:title" content={siteTitle} />
-        <meta name="twitter:card" content="summary_large_image" />
-      </Head>
+      <NextSeo
+        title={siteTitle}
+        description={siteDescription}
+        canonical="https://www.erfanhabibipanah.vercel.app/"
+        openGraph={{
+          url: "https://www.erfanhabibipanah.vercel.app/",
+          title: { siteTitle },
+          description: { siteDescription },
+          images: [
+            {
+              url: "/favicon.ico",
+              width: 800,
+              height: 600,
+              alt: "Erfan's picture",
+            },
+          ],
+          site_name: { siteTitle },
+        }}
+        twitter={{
+          handle: "@handle",
+          site: "@site",
+          cardType: "summary_large_image",
+        }}
+      />
       <Header isActive={setPadding} />
       <div
         className={`${
