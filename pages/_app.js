@@ -1,8 +1,6 @@
 import "../styles/index.css";
 import "../styles/global.css";
-import Analysis from "../components/analysis";
-import { DefaultSeo } from "next-seo";
-import SEO from "../next-seo.config";
+import Analysis from "../components/Google Analysis/analysis";
 
 function MyApp({ Component, pageProps }) {
   return (

@@ -4,9 +4,9 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import Button from "@material-ui/core/Button";
-import WordpressIcon from "../public/images/wordpress.svg";
-import ReactIcon from "../public/images/react.svg";
-import NextIcon from "../public/images/nextjs.svg";
+import WordpressIcon from "../../public/images/svg/wordpress.svg";
+import ReactIcon from "../../public/images/svg/react.svg";
+import NextIcon from "../../public/images/svg/nextjs.svg";
 
 const TimeLineSite = () => {
   return (

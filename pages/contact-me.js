@@ -1,15 +1,15 @@
-import Header from "../components/header";
-import Footer from "../components/footer";
+import Header from "../components/Header/header";
+import Footer from "../components/Footer/footer";
 import { useState } from "react";
 import emailjs from "emailjs-com";
 import contactStyles from "../styles/contact-me.module.css";
-import { getActive } from "../components/header";
-import { NextSeo } from "next-seo";
+import Meta from "../components/SEO/seo-meta";
 
 const siteTitle = "Erfan's Contact Me";
 const siteDescription =
   "I am Erfan Habibi Panah Fard and I’m a Front-End developer. You can contact me from this page.";
-
+const url = "https://www.erfanhabibipanah.dev/contact-me";
+const name = "Erfan Habibi Panah Fard";
 const Contact = () => {
   const [padding, setPadding] = useState(true);
 
@@ -36,30 +36,7 @@ const Contact = () => {
 
   return (
     <div>
-      <NextSeo
-        title={siteTitle}
-        description={siteDescription}
-        canonical="https://www.erfanhabibipanah.dev/"
-        openGraph={{
-          url: "https://www.erfanhabibipanah.dev/",
-          title: { siteTitle },
-          description: { siteDescription },
-          images: [
-            {
-              url: "/favicon.ico",
-              width: 800,
-              height: 600,
-              alt: "Erfan's picture",
-            },
-          ],
-          site_name: { siteTitle },
-        }}
-        twitter={{
-          handle: "@handle",
-          site: "@site",
-          cardType: "summary_large_image",
-        }}
-      />
+      <Meta title={siteTitle} desc={siteDescription} url={url} creator={name} />
       <Header isActive={setPadding} />
       <div className={`${contactStyles.body}`}>
         <div className={`${contactStyles.background}`}>
@@ -161,13 +138,5 @@ const Contact = () => {
     </div>
   );
 };
-
-export async function getStaticProps({ active = true }) {
-  console.log(active);
-  const activeItem = await getActive(active);
-  return {
-    props: { activeItem },
-  };
-}
 
 export default Contact;

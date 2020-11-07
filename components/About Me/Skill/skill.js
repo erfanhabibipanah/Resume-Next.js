@@ -3,10 +3,10 @@ import CardContent from "@material-ui/core/CardContent";
 import Avatar from "@material-ui/core/Avatar";
 import React from "react";
 import skillStyles from "./skill.module.css";
-import JavascriptIcon from "../public/images/javascript.svg";
-import WordpressIcon from "../public/images/wordpress.svg";
-import ReactIcon from "../public/images/react.svg";
-import OtherIcon from "../public/images/code.svg";
+import JavascriptIcon from "../../../public/images/svg/javascript.svg";
+import WordpressIcon from "../../../public/images/svg/wordpress.svg";
+import ReactIcon from "../../../public/images/svg/react.svg";
+import OtherIcon from "../../../public/images/svg/code.svg";
 
 const Skill = () => {
   return (

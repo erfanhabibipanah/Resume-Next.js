@@ -1,42 +1,21 @@
-import Header from "../components/header";
-import Footer from "../components/footer";
+import Header from "../components/Header/header";
+import Footer from "../components/Footer/footer";
 import { useState } from "react";
-import TimeLineSite from "../components/timeLineSite";
+import TimeLineSite from "../components/TimeLine/timeLineSite";
 import sitesStyle from "../styles/sites.module.css";
-import { NextSeo } from "next-seo";
+import Meta from "../components/SEO/seo-meta";
 
 const siteTitle = "Erfan's Projects";
 const siteDescription =
   "I am Erfan Habibi Panah Fard and This is showcase of my projects";
+const url = "https://www.erfanhabibipanah.dev/sites";
+const name = "Erfan Habibi Panah Fard";
 
 const Sites = () => {
   const [padding, setPadding] = useState(true);
   return (
     <div style={{ backgroundColor: "rgb(226, 226, 226)" }}>
-      <NextSeo
-        title={siteTitle}
-        description={siteDescription}
-        canonical="https://www.erfanhabibipanah.dev/"
-        openGraph={{
-          url: "https://www.erfanhabibipanah.dev/",
-          title: { siteTitle },
-          description: { siteDescription },
-          images: [
-            {
-              url: "/favicon.ico",
-              width: 800,
-              height: 600,
-              alt: "Erfan's picture",
-            },
-          ],
-          site_name: { siteTitle },
-        }}
-        twitter={{
-          handle: "@handle",
-          site: "@site",
-          cardType: "summary_large_image",
-        }}
-      />
+      <Meta title={siteTitle} desc={siteDescription} url={url} creator={name} />
       <Header isActive={setPadding} />
       <div
         className={`${padding ? "" : sitesStyle.paddingMobile}`}

@@ -5,7 +5,7 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import SchoolIcon from "@material-ui/icons/School";
 import Button from "@material-ui/core/Button";
-import CertificateIcon from "../public/images/certificate.svg";
+import CertificateIcon from "../../public/images/svg/certificate.svg";
 import timeLineStyles from "./timeLine.module.css";
 
 const TimeLineEducation = () => {

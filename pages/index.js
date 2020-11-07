@@ -1,46 +1,23 @@
 import utilStyles from "../styles/utils.module.css";
-import Header from "../components/header";
+import Header from "../components/Header/header";
 import { useState } from "react";
-import Skill from "../components/skill";
-import Footer from "../components/footer";
+import Skill from "../components/About Me/Skill/skill";
+import Footer from "../components/Footer/footer";
 import layoutStyles from "../styles/layout.module.css";
-import LanguageAndHobbies from "../components/languageAndHobbies";
-import { NextSeo } from "next-seo";
+import LanguageAndHobbies from "../components/About Me/Language & Hobbies/languageAndHobbies";
+import Meta from "../components/SEO/seo-meta";
 
 const siteTitle = "Erfan's Portfolio";
 const siteDescription =
   "I am Erfan Habibi Panah Fard and I’m a Front-End developer. This is my Portfolio site";
-
+const url = "https://www.erfanhabibipanah.dev";
 const name = "Erfan Habibi Panah Fard";
 
 export default function Home({ allPostsData }) {
   const [padding, setPadding] = useState(true);
   return (
     <div>
-      <NextSeo
-        title={siteTitle}
-        description={siteDescription}
-        canonical="https://www.erfanhabibipanah.dev/"
-        openGraph={{
-          url: "https://www.erfanhabibipanah.dev/",
-          title: { siteTitle },
-          description: { siteDescription },
-          images: [
-            {
-              url: "/favicon.ico",
-              width: 800,
-              height: 600,
-              alt: "Erfan's picture",
-            },
-          ],
-          site_name: { siteTitle },
-        }}
-        twitter={{
-          handle: "@handle",
-          site: "@site",
-          cardType: "summary_large_image",
-        }}
-      />
+      <Meta title={siteTitle} desc={siteDescription} url={url} creator={name} />
       <Header isActive={setPadding} />
       <div
         className={`${

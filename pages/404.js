@@ -1,27 +1,22 @@
 import notStyles from "../styles/NotFound.module.css";
-import Header from "../components/header";
-import Head from "next/head";
-import Footer from "../components/footer";
+import Header from "../components/Header/header";
+import Footer from "../components/Footer/footer";
 import { useState } from "react";
 import { NextSeo } from "next-seo";
+import Meta from "../components/SEO/seo-meta";
 
 const siteTitle = "Erfan's portfolio";
 const siteDescription =
   "I am Erfan Habibi Panah Fard and I’m a Front-End developer. This is my Portfolio site";
+const url = "https://www.erfanhabibipanah.dev";
+const name = "Erfan Habibi Panah Fard";
 
 const NotFound = () => {
   const [padding, setPadding] = useState(true);
   return (
     <div>
       <NextSeo noindex={true} />
-      <Head>
-        <title>{siteTitle}</title>
-        <link rel="icon" href="/favicon.ico" />
-        <meta name="description" content={siteDescription} />
-        <meta property="og:image" content="/images/profile.jpg" />
-        <meta name="og:title" content={siteTitle} />
-        <meta name="twitter:card" content="summary_large_image" />
-      </Head>
+      <Meta title={siteTitle} desc={siteDescription} url={url} creator={name} />
       <Header isActive={setPadding} />
       <div className={notStyles.body}>
         <div style={{ padding: "100px 0 " }}>

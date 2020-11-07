@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import styles from "../styles/layout.module.css";
-import utilStyles from "../styles/utils.module.css";
+import styles from "../../styles/layout.module.css";
+import utilStyles from "../../styles/utils.module.css";
 
 const Header = ({ isActive }) => {
   const [isHome, setIsHome] = useState(false);
@@ -46,7 +46,7 @@ const Header = ({ isActive }) => {
             <a className="flex">
               <Link href="https://www.linkedin.com/in/erfanhabibipanah">
                 <img
-                  src="/images/profile.webp"
+                  src="/images/profile/profile.webp"
                   className={`cursor-pointer h-6 w-auto sm:h-6 ${styles.headerImage} ${utilStyles.borderCircle}`}
                   alt="Erfan's img"
                 />
@@ -142,7 +142,7 @@ const Header = ({ isActive }) => {
                 <a className="flex">
                   <Link href="https://www.linkedin.com/in/erfanhabibipanah">
                     <img
-                      src="/images/profile.webp"
+                      src="/images/profile/profile.webp"
                       className={`cursor-pointer h-8 w-auto ${styles.headerSImage} ${utilStyles.borderCircle}`}
                       alt="Erfan's img"
                     />
