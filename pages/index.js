@@ -9,7 +9,7 @@ import Meta from "../components/SEO/seo-meta";
 
 const siteTitle = "Erfan's Portfolio";
 const siteDescription =
-  "I am Erfan Habibi Panah Fard and I’m a Front-End developer. This is my Portfolio site";
+  "I am Erfan Habibi Panah Fard and I’m a Front-end developer. This is my Portfolio site";
 const url = "https://www.erfanhabibipanah.dev";
 const name = "Erfan Habibi Panah Fard";
 
@@ -39,14 +39,14 @@ export default function Home({ allPostsData }) {
           <br />
           <br />
           <span>
-            I have experienced in web designing(UI/UX) and know Adobe Photoshop
-            and Adobe Illustrator.
+            I have experienc in web designing(UI/UX) and know how to work with
+            Adobe Photoshop and Adobe Illustrator.
           </span>
           <br />
           <br />
           <span>
-            As an undergraduate student I like working and improve my skills
-            besides my academic studying and with self-study, I can learn
+            As an undergraduate student, I like to work and improve my skills
+            beside my academic studying and my self studies. Also I can learn
             anything quickly.
           </span>
           <br />

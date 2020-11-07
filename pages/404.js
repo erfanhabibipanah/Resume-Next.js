@@ -6,7 +6,7 @@ import Meta from "../components/SEO/seo-meta";
 
 const siteTitle = "Erfan's portfolio";
 const siteDescription =
-  "I am Erfan Habibi Panah Fard and I’m a Front-End developer. This is my Portfolio site";
+  "I am Erfan Habibi Panah Fard and I’m a Front-end developer. This is my Portfolio site";
 const url = "https://www.erfanhabibipanah.dev";
 const name = "Erfan Habibi Panah Fard";
 

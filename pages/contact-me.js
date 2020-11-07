@@ -7,7 +7,7 @@ import Meta from "../components/SEO/seo-meta";
 
 const siteTitle = "Erfan's Contact Me";
 const siteDescription =
-  "I am Erfan Habibi Panah Fard and I’m a Front-End developer. You can contact me from this page.";
+  "I am Erfan Habibi Panah Fard and I’m a Front-end developer. You can contact me from this page.";
 const url = "https://www.erfanhabibipanah.dev/contact-me";
 const name = "Erfan Habibi Panah Fard";
 const Contact = () => {
