@@ -2,7 +2,6 @@ import notStyles from "../styles/NotFound.module.css";
 import Header from "../components/Header/header";
 import Footer from "../components/Footer/footer";
 import { useState } from "react";
-import { NextSeo } from "next-seo";
 import Meta from "../components/SEO/seo-meta";
 
 const siteTitle = "Erfan's portfolio";
@@ -15,7 +14,7 @@ const NotFound = () => {
   const [padding, setPadding] = useState(true);
   return (
     <div>
-      <NextSeo noindex={true} />
+      <meta name="robots" content="noindex" />
       <Meta title={siteTitle} desc={siteDescription} url={url} creator={name} />
       <Header isActive={setPadding} />
       <div className={notStyles.body}>
