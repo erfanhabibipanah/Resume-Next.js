@@ -20,8 +20,6 @@ const Meta = (props) => (
     <link rel="icon" type="image/png" href="/favicon.ico" />
     <link rel="apple-touch-icon" href="/favicon.ico" />
     <meta property="og:image" content="/images/profile/profile.jpg" />
-    <meta property="og:image:width" content="400" />
-    <meta property="og:image:height" content="300" />
     <meta property="og:image:alt" content={props.creator} />
     <meta name="twitter:image" content="/images/profile/profile.jpg" />
     <link rel="canonical" href={props.url} />
