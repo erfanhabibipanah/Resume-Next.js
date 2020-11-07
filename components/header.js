@@ -43,15 +43,15 @@ const Header = ({ isActive }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex justify-between items-center border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
           <div className="lg:w-0 lg:flex-1">
-            <Link href="https://www.linkedin.com/in/erfanhabibipanah">
-              <a className="flex">
+            <a className="flex">
+              <Link href="https://www.linkedin.com/in/erfanhabibipanah">
                 <img
                   src="/images/profile.webp"
-                  className={`h-6 w-auto sm:h-6 ${styles.headerImage} ${utilStyles.borderCircle}`}
+                  className={`cursor-pointer h-6 w-auto sm:h-6 ${styles.headerImage} ${utilStyles.borderCircle}`}
                   alt="Erfan's img"
                 />
-              </a>
-            </Link>
+              </Link>
+            </a>
           </div>
           <div className="-mr-2 -my-2 md:hidden">
             <button
@@ -139,15 +139,15 @@ const Header = ({ isActive }) => {
           <div className="rounded-lg shadow-xs bg-white divide-y-2 divide-gray-50">
             <div className="pt-5 pb-6 px-5 space-y-6">
               <div className="flex items-center justify-between">
-                <Link href="https://www.linkedin.com/in/erfanhabibipanah">
-                  <a className="flex">
+                <a className="flex">
+                  <Link href="https://www.linkedin.com/in/erfanhabibipanah">
                     <img
                       src="/images/profile.webp"
-                      className={`h-8 w-auto ${styles.headerSImage} ${utilStyles.borderCircle}`}
+                      className={`cursor-pointer h-8 w-auto ${styles.headerSImage} ${utilStyles.borderCircle}`}
                       alt="Erfan's img"
                     />
-                  </a>
-                </Link>
+                  </Link>
+                </a>
                 <div className="-mr-2">
                   <button
                     onClick={() => {
