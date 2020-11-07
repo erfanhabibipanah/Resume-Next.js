@@ -151,7 +151,7 @@ const LanguagesAndHobbies = () => {
                     styles.ResumeLanguagesAndHobbiesBlockhobbybackdescription
                   }
                 >
-                  Playing Video game like Fifa
+                  Playing Video games like Fifa
                 </div>
               </CardContent>
             </Card>

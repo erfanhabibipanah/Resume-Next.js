@@ -37,7 +37,7 @@ const Skill = () => {
             margin: "0",
           }}
         >
-          I can say i’m quite good at
+          I can say I’m quite good at
         </p>
       </div>
       <div

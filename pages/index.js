@@ -40,7 +40,7 @@ export default function Home({ allPostsData }) {
           <br />
           <span>
             I have experienced in web designing(UI/UX) and know Adobe Photoshop
-            and Adobe Illustrator .
+            and Adobe Illustrator.
           </span>
           <br />
           <br />
