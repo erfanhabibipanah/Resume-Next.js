@@ -7,7 +7,6 @@ import SEO from "../next-seo.config";
 function MyApp({ Component, pageProps }) {
   return (
     <Analysis>
-      <DefaultSeo {...SEO} />
       <Component {...pageProps} />
     </Analysis>
   );
