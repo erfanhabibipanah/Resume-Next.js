@@ -33,14 +33,14 @@ export default function Home({ allPostsData }) {
         <section className={utilStyles.headingMd}>
           <br />
           <span>
-            I’m a Front-End developer and experienced in React.js, Next.js,
+            I’m a Front-end developer and experienced in React.js, Next.js,
             JavaScript, Python, HTML, CSS, Wordpress, C, C++.
           </span>
           <br />
           <br />
           <span>
-            I have experienc in web designing(UI/UX) and know how to work with
-            Adobe Photoshop and Adobe Illustrator.
+            I have experience in web designing(UI/UX), and I know how to work
+            with Adobe Photoshop and Adobe Illustrator.
           </span>
           <br />
           <br />
