@@ -44,13 +44,16 @@ const Header = ({ isActive }) => {
         <div className="flex justify-between items-center border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
           <div className="lg:w-0 lg:flex-1">
             <a className="flex">
-              <Link href="https://www.linkedin.com/in/erfanhabibipanah">
+              <link
+                rel="preconnect"
+                href="https://www.linkedin.com/in/erfanhabibipanah"
+              >
                 <img
                   src="/images/profile/profile.webp"
                   className={`cursor-pointer h-6 w-auto sm:h-6 ${styles.headerImage} ${utilStyles.borderCircle}`}
                   alt="Erfan's img"
                 />
-              </Link>
+              </link>
             </a>
           </div>
           <div className="-mr-2 -my-2 md:hidden">
@@ -140,13 +143,16 @@ const Header = ({ isActive }) => {
             <div className="pt-5 pb-6 px-5 space-y-6">
               <div className="flex items-center justify-between">
                 <a className="flex">
-                  <Link href="https://www.linkedin.com/in/erfanhabibipanah">
+                  <link
+                    rel="preconnect"
+                    href="https://www.linkedin.com/in/erfanhabibipanah"
+                  >
                     <img
                       src="/images/profile/profile.webp"
                       className={`cursor-pointer h-8 w-auto ${styles.headerSImage} ${utilStyles.borderCircle}`}
                       alt="Erfan's img"
                     />
-                  </Link>
+                  </link>
                 </a>
                 <div className="-mr-2">
                   <button
