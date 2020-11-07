@@ -39,7 +39,7 @@ export default function Home({ allPostsData }) {
           <br />
           <br />
           <span>
-            I have experience in web designing(UI/UX), and I know how to work
+            I have experience in web designing (UI/UX), and I know how to work
             with Adobe Photoshop and Adobe Illustrator.
           </span>
           <br />
