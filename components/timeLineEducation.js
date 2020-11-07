@@ -177,7 +177,7 @@ const TimeLineEducation = () => {
           style={{ fontSize: "24px" }}
           className="vertical-timeline-element-title"
         >
-          Salam Tajrish Highscool
+          Salam Tajrish Highschool
         </h3>
         <h4
           style={{ fontWeight: "500" }}

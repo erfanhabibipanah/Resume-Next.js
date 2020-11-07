@@ -10,7 +10,7 @@ const Footer = () => {
         <br />
       </div>
       <div className="bg-gray-100  text-center container mx-auto px-6 pt-4 pb-6">
-        © Erfan Habibi Panah Fard . All rights reserved.
+        © Erfan Habibi Panah Fard. All rights reserved.
       </div>
     </div>
   );

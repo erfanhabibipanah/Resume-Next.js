@@ -39,9 +39,9 @@ const Contact = () => {
       <NextSeo
         title={siteTitle}
         description={siteDescription}
-        canonical="https://www.erfanhabibipanah.vercel.app/"
+        canonical="https://www.erfanhabibipanah.dev/"
         openGraph={{
-          url: "https://www.erfanhabibipanah.vercel.app/",
+          url: "https://www.erfanhabibipanah.dev/",
           title: { siteTitle },
           description: { siteDescription },
           images: [

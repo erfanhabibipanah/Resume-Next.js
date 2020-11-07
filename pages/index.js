@@ -1,6 +1,5 @@
 import utilStyles from "../styles/utils.module.css";
 import Header from "../components/header";
-import Head from "next/head";
 import { useState } from "react";
 import Skill from "../components/skill";
 import Footer from "../components/footer";
@@ -21,9 +20,9 @@ export default function Home({ allPostsData }) {
       <NextSeo
         title={siteTitle}
         description={siteDescription}
-        canonical="https://www.erfanhabibipanah.vercel.app/"
+        canonical="https://www.erfanhabibipanah.dev/"
         openGraph={{
-          url: "https://www.erfanhabibipanah.vercel.app/",
+          url: "https://www.erfanhabibipanah.dev/",
           title: { siteTitle },
           description: { siteDescription },
           images: [

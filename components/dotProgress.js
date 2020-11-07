@@ -8,7 +8,6 @@ const DotsProgress = ({ maxNumberOfDots, numberOfActiveDots }) => (
         className={`${styles.dotsprogressdot} ${
           numberOfActiveDots > i ? styles.dotsprogressdotactive : ""
         }`}
-        key={i} // eslint-disable-line react/no-array-index-key
       />
     ))}
   </div>
