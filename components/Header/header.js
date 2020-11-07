@@ -236,9 +236,4 @@ const Header = ({ isActive }) => {
   );
 };
 
-export async function getActive() {
-  const active = true;
-  return { props: { active } };
-}
-
 export default Header;
