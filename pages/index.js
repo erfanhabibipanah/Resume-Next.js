@@ -27,7 +27,12 @@ export default function Home({ allPostsData }) {
         <header className={layoutStyles.header}>
           <>
             I am
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
+            <h1
+              style={{ textAlign: "center" }}
+              className={utilStyles.heading2Xl}
+            >
+              {name}
+            </h1>
           </>
         </header>
         <section className={utilStyles.headingMd}>
