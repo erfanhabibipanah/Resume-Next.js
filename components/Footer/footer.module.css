@@ -1,15 +1,8 @@
-@media only screen and (max-width: 630px) {
-  .linkedin {
+@media only screen and (max-width: 766px) {
+  .a {
     padding-top: 20px;
   }
 }
 
 @media only screen and (max-width: 900px) and (min-width: 630px) {
-  .linkedin {
-    padding-left: -10px;
-  }
-}
-
-.linkedin {
-  margin-top: 0.2rem;
 }
