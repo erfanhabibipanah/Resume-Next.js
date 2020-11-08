@@ -38,8 +38,8 @@ export default function Home({ allPostsData }) {
         <section className={utilStyles.headingMd}>
           <br />
           <span>
-            I’m a Front-end developer and experienced in React.js, Next.js,
-            JavaScript, Python, HTML, CSS, Wordpress, C, C++.
+            I’m a Front-end developer and I have experienced in React.js,
+            Next.js, JavaScript, Python, HTML, CSS, WordPress, C, C++.
           </span>
           <br />
           <br />
@@ -51,8 +51,8 @@ export default function Home({ allPostsData }) {
           <br />
           <span>
             As an undergraduate student, I like to work and improve my skills
-            beside my academic studying and my self studies. Also I can learn
-            anything quickly.
+            besides my academic studies and my self-studies. I'm also a
+            multitasker and learn things quickly.
           </span>
           <br />
         </section>
