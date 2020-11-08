@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <div>
       <div
-        class="bg-gray-100 z-1"
+        className="bg-gray-100 z-1 border-t"
         style={{
           width: "100%",
           display: "inline-flex",
@@ -14,7 +14,7 @@ const Footer = () => {
         }}
       >
         <div
-          class="flex pb-5 px-3 m-auto pt-5 border-t text-gray-800 text-sm flex-col
+          class="flex pb-5 px-3 m-auto pt-5 text-gray-800 pt-8 mb-5 flex-col
       flex-row max-w-6xl text-center grid grid-cols-10 xl:gap-10 lg:gap-10 md:gap-10 sm:gap-5"
         >
           <div class="mt-2 text-center col-start-2 col-span-8">
@@ -25,7 +25,7 @@ const Footer = () => {
               rel="preconnect"
               href="https://www.linkedin.com/in/erfanhabibipanah"
               target="_blank"
-              class="w-6 mx-1"
+              className="w-6 mx-1"
             >
               <Linkedin />
             </a>
