@@ -2,6 +2,7 @@ import React from "react";
 import Linkedin from "../../public/images/svg/linkedin.svg";
 import GitHub from "../../public/images/svg/github.svg";
 import footerStyle from "./footer.module.css";
+import TwitterIcon from "@material-ui/icons/Twitter";
 
 const Footer = () => {
   return (
@@ -37,6 +38,14 @@ const Footer = () => {
               className={`w-6 mx-1 ${footerStyle.a}`}
             >
               <GitHub />
+            </a>
+            <a
+              rel="preconnect"
+              href="https://twitter.com/e_habibipanah"
+              target="_blank"
+              className={`w-6 mx-1 ${footerStyle.a}`}
+            >
+              <TwitterIcon />
             </a>
           </div>
         </div>
