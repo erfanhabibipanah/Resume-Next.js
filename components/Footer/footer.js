@@ -17,7 +17,7 @@ const Footer = () => {
         <div class="text-center ">
           © Erfan Habibi Panah Fard. All Rights Reserved.
         </div>
-        <div class={" place-content-center py-5 flex"}>
+        <div class={" place-content-center py-5 -mb-3 flex"}>
           <a
             rel="preconnect"
             href="https://www.linkedin.com/in/erfanhabibipanah"
