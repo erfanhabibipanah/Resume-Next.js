@@ -3,6 +3,8 @@ import Linkedin from "../../public/images/svg/linkedin.svg";
 import GitHub from "../../public/images/svg/github.svg";
 import footerStyle from "./footer.module.css";
 import TwitterIcon from "@material-ui/icons/Twitter";
+import InstagramIcon from "../../public/images/svg/instagram.svg";
+import TelegramIcon from "@material-ui/icons/Telegram";
 
 const Footer = () => {
   return (
@@ -31,6 +33,7 @@ const Footer = () => {
             href="https://github.com/erfanhabibipanah"
             target="_blank"
             className={`w-6 mx-1 ${footerStyle.a}`}
+            style={{ marginTop: "1px" }}
           >
             <GitHub />
           </a>
@@ -42,6 +45,24 @@ const Footer = () => {
             style={{ marginTop: "-2px" }}
           >
             <TwitterIcon style={{ color: "#00acee" }} />
+          </a>
+          <a
+            rel="preconnect"
+            href="https://www.instagram.com/erfan.habibipanah/"
+            target="_blank"
+            className={`mx-1 ${footerStyle.a}`}
+            style={{ marginTop: "1px", width: "1.3rem" }}
+          >
+            <InstagramIcon />
+          </a>
+          <a
+            rel="preconnect"
+            href="https://t.me/erfanhabibipanah"
+            target="_blank"
+            className={`w-6 mx-1 ${footerStyle.a}`}
+            style={{ marginTop: "-2px" }}
+          >
+            <TelegramIcon style={{ color: "#0088cc" }} />
           </a>
         </div>
       </div>
