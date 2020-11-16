@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Host: https://www.erfanhabibipanah.dev/
+Sitemap: https://www.erfanhabibipanah.dev/sitemap.xml
