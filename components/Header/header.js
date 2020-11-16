@@ -44,17 +44,13 @@ const Header = ({ isActive }) => {
         <div className="flex justify-between items-center border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
           <div className="lg:w-0 lg:flex-1">
             <a className="flex">
-              <a
-                rel="preconnect"
-                href="https://www.linkedin.com/in/erfanhabibipanah"
-                target="_blank"
-              >
+              <Link href="/">
                 <img
                   src="/images/profile/profile.webp"
                   className={`cursor-pointer h-6 w-auto sm:h-6 ${styles.headerImage} ${utilStyles.borderCircle}`}
                   alt="Erfan's img"
                 />
-              </a>
+              </Link>
             </a>
           </div>
           <div className="-mr-2 -my-2 md:hidden">
@@ -83,18 +79,6 @@ const Header = ({ isActive }) => {
             </button>
           </div>
           <nav className="hidden md:flex space-x-10">
-            <div className="relative">
-              <Link href="/">
-                <button
-                  type="button"
-                  className={`${
-                    isHome ? "text-gray-900" : "text-gray-500"
-                  } group inline-flex items-center space-x-2 text-base leading-6 font-medium hover:text-gray-900 focus:outline-none focus:text-gray-900 active:text-gray-900 transition ease-in-out duration-150`}
-                >
-                  <span>About Me</span>
-                </button>
-              </Link>
-            </div>
             <div className="relative">
               <Link href="/projects">
                 <button
@@ -144,17 +128,13 @@ const Header = ({ isActive }) => {
             <div className="pt-5 pb-6 px-5 space-y-6 bg-gray-100">
               <div className="flex items-center justify-between">
                 <a className="flex">
-                  <a
-                    rel="preconnect"
-                    href="https://www.linkedin.com/in/erfanhabibipanah"
-                    target="_blank"
-                  >
+                  <Link href="/">
                     <img
                       src="/images/profile/profile.webp"
                       className={`cursor-pointer h-8 w-auto ${styles.headerSImage} ${utilStyles.borderCircle}`}
                       alt="Erfan's img"
                     />
-                  </a>
+                  </Link>
                 </a>
                 <div className="-mr-2">
                   <button
@@ -185,16 +165,6 @@ const Header = ({ isActive }) => {
             </div>
             <div className="py-6 px-5 space-y-6 bg-gray-100">
               <div className="grid grid-cols-2 gap-y-4 gap-x-8">
-                <Link href="/">
-                  <button
-                    type="button"
-                    className={`${
-                      isHome ? "text-gray-900" : "text-gray-500"
-                    } text-base leading-6 font-medium hover:text-gray-900 transition ease-in-out duration-150`}
-                  >
-                    <span>About Me</span>
-                  </button>
-                </Link>
                 <Link href="/projects">
                   <button
                     type="button"
