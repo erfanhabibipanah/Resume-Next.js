@@ -96,14 +96,14 @@ const Header = ({ isActive }) => {
               </Link>
             </div>
             <div className="relative">
-              <Link href="/sites">
+              <Link href="/projects">
                 <button
                   type="button"
                   className={`${
                     isSites ? "text-gray-900" : "text-gray-500"
                   } group inline-flex items-center space-x-2 text-base leading-6 font-medium hover:text-gray-900 focus:outline-none focus:text-gray-900 active:text-gray-900 transition ease-in-out duration-150`}
                 >
-                  <span>Sites</span>
+                  <span>Projects</span>
                 </button>
               </Link>
             </div>
@@ -195,14 +195,14 @@ const Header = ({ isActive }) => {
                     <span>About Me</span>
                   </button>
                 </Link>
-                <Link href="/sites">
+                <Link href="/projects">
                   <button
                     type="button"
                     className={`${
                       isSites ? "text-gray-900" : "text-gray-500"
                     } text-base leading-6 font-medium hover:text-gray-900 transition ease-in-out duration-150`}
                   >
-                    <span>Sites</span>
+                    <span>Projects</span>
                   </button>
                 </Link>
                 <Link href="/education">
