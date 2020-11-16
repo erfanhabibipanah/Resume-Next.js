@@ -20,7 +20,7 @@ const Header = ({ isActive }) => {
       setIsSites(false);
       setIsEducation(false);
       setIsContact(false);
-    } else if (window.location.pathname === "/sites") {
+    } else if (window.location.pathname === "/projects") {
       setIsHome(false);
       setIsSites(true);
       setIsEducation(false);
