@@ -36,6 +36,39 @@ const TimeLineEducation = () => {
       </VerticalTimelineElement>
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
+        date="Nov 2020"
+        iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
+        icon={<CertificateIcon />}
+      >
+        <h3
+          style={{ fontSize: "24px" }}
+          className="vertical-timeline-element-title"
+        >
+          The Complete Full-Stack JavaScript Course!
+        </h3>
+        <h4
+          style={{ fontWeight: "500" }}
+          className="vertical-timeline-element-subtitle"
+        >
+          Udemy
+        </h4>
+        <br />
+        <div>
+          <Button
+            key={null} // eslint-disable-line react/no-array-index-key
+            variant="outlined"
+            color="default"
+            target="_blank"
+            href={
+              "https://www.udemy.com/certificate/UC-92040845-497e-4869-ae24-31c527f881bd/"
+            }
+          >
+            SEE CREDENTIAL
+          </Button>
+        </div>
+      </VerticalTimelineElement>
+      <VerticalTimelineElement
+        className="vertical-timeline-element--work"
         date="Oct 2020"
         iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
         icon={<CertificateIcon />}
