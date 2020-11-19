@@ -7,6 +7,7 @@ import SchoolIcon from "@material-ui/icons/School";
 import Button from "@material-ui/core/Button";
 import CertificateIcon from "../../public/images/svg/certificate.svg";
 import timeLineStyles from "./timeLine.module.css";
+import UdemyIcon from "../../public/images/svg/udemy.svg";
 
 const TimeLineEducation = () => {
   return (
@@ -37,8 +38,8 @@ const TimeLineEducation = () => {
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
         date="Nov 2020"
-        iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
-        icon={<CertificateIcon />}
+        iconStyle={{ background: "rgb(250, 250, 250)", color: "#fff" }}
+        icon={<UdemyIcon />}
       >
         <h3
           style={{ fontSize: "24px" }}
@@ -70,8 +71,8 @@ const TimeLineEducation = () => {
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
         date="Oct 2020"
-        iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
-        icon={<CertificateIcon />}
+        iconStyle={{ background: "rgb(250, 250, 250)", color: "#fff" }}
+        icon={<UdemyIcon />}
       >
         <h3
           style={{ fontSize: "24px" }}
@@ -103,8 +104,8 @@ const TimeLineEducation = () => {
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
         date="Oct 2020"
-        iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
-        icon={<CertificateIcon />}
+        iconStyle={{ background: "rgb(250, 250, 250)", color: "#fff" }}
+        icon={<UdemyIcon />}
       >
         <h3
           style={{ fontSize: "24px" }}
@@ -136,8 +137,8 @@ const TimeLineEducation = () => {
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
         date="Oct 2020"
-        iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
-        icon={<CertificateIcon />}
+        iconStyle={{ background: "rgb(250, 250, 250)", color: "#fff" }}
+        icon={<UdemyIcon />}
       >
         <h3
           style={{ fontSize: "24px" }}
