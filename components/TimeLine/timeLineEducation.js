@@ -222,9 +222,9 @@ const TimeLineEducation = () => {
         <br />
         Diploma in Physics and Mathematics Discipline
         <p style={{ fontSize: "12px" }}>
-          Cumulative Grade Average:   19.58/20 (approx. 3.916/4)
+          Cumulative Grade Average:     19.58/20 (approx. 3.916/4)
           <br />
-          Diploma Grade: 19.03/20 (approx. 3.806/4)
+          Diploma Grade:             19.03/20 (approx. 3.806/4)
         </p>
         <br />
       </VerticalTimelineElement>
