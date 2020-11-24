@@ -8,6 +8,7 @@ import Button from "@material-ui/core/Button";
 import CertificateIcon from "../../public/images/svg/certificate.svg";
 import timeLineStyles from "./timeLine.module.css";
 import UdemyIcon from "../../public/images/svg/udemy.svg";
+import CourseraIcon from "../../public/images/svg/coursera.svg";
 
 const TimeLineEducation = () => {
   return (
@@ -162,6 +163,37 @@ const TimeLineEducation = () => {
             href={
               "https://www.udemy.com/certificate/UC-f95ebfd0-0d82-4bc8-b2f0-cc0ef1338d13/"
             }
+          >
+            SEE CREDENTIAL
+          </Button>
+        </div>
+      </VerticalTimelineElement>
+      <VerticalTimelineElement
+        className="vertical-timeline-element--work"
+        date="Oct 2020"
+        iconStyle={{ background: "rgb(250, 250, 250)", color: "#fff" }}
+        icon={<CourseraIcon />}
+      >
+        <h3
+          style={{ fontSize: "24px" }}
+          className="vertical-timeline-element-title"
+        >
+          HTML, CSS, and Javascript for Web Developers
+        </h3>
+        <h4
+          style={{ fontWeight: "500" }}
+          className="vertical-timeline-element-subtitle"
+        >
+          Coursera
+        </h4>
+        <br />
+        <div>
+          <Button
+            key={null} // eslint-disable-line react/no-array-index-key
+            variant="outlined"
+            color="default"
+            target="_blank"
+            href={"https://coursera.org/share/79ff30b8755c3c44945e9416a97ba0e4"}
           >
             SEE CREDENTIAL
           </Button>
