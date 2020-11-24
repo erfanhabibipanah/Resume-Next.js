@@ -15,6 +15,29 @@ const TimeLineEducation = () => {
     <VerticalTimeline>
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
+        contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+        contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
+        date="2018 - present"
+        dateClassName={timeLineStyles.colorBlack}
+        iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+        icon={<SchoolIcon />}
+      >
+        <h3
+          style={{ fontSize: "24px" }}
+          className="vertical-timeline-element-title"
+        >
+          Bachelor of Engineering - BE, Electrical and Electronics Engineering
+        </h3>
+        <br />
+        <h4
+          style={{ fontWeight: "500" }}
+          className="vertical-timeline-element-subtitle"
+        >
+          K. N. Toosi University of Technology, Tehran, Iran
+        </h4>
+      </VerticalTimelineElement>
+      <VerticalTimelineElement
+        className="vertical-timeline-element--work"
         date="Sep 2020"
         iconStyle={{ background: "rgb(250, 250, 250)", color: "#fff" }}
         icon={<CourseraIcon />}
@@ -43,29 +66,6 @@ const TimeLineEducation = () => {
             SEE CREDENTIAL
           </Button>
         </div>
-      </VerticalTimelineElement>
-      <VerticalTimelineElement
-        className="vertical-timeline-element--work"
-        contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-        contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
-        date="2018 - present"
-        dateClassName={timeLineStyles.colorBlack}
-        iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-        icon={<SchoolIcon />}
-      >
-        <h3
-          style={{ fontSize: "24px" }}
-          className="vertical-timeline-element-title"
-        >
-          Bachelor of Engineering - BE, Electrical and Electronics Engineering
-        </h3>
-        <br />
-        <h4
-          style={{ fontWeight: "500" }}
-          className="vertical-timeline-element-subtitle"
-        >
-          K. N. Toosi University of Technology, Tehran, Iran
-        </h4>
       </VerticalTimelineElement>
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
