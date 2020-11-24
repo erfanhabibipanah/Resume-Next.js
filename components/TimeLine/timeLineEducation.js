@@ -170,7 +170,7 @@ const TimeLineEducation = () => {
       </VerticalTimelineElement>
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
-        date="Oct 2020"
+        date="Sep 2020"
         iconStyle={{ background: "rgb(250, 250, 250)", color: "#fff" }}
         icon={<CourseraIcon />}
       >
