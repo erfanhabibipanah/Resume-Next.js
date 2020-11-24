@@ -15,6 +15,37 @@ const TimeLineEducation = () => {
     <VerticalTimeline>
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
+        date="Sep 2020"
+        iconStyle={{ background: "rgb(250, 250, 250)", color: "#fff" }}
+        icon={<CourseraIcon />}
+      >
+        <h3
+          style={{ fontSize: "24px" }}
+          className="vertical-timeline-element-title"
+        >
+          Machine Learning
+        </h3>
+        <h4
+          style={{ fontWeight: "500" }}
+          className="vertical-timeline-element-subtitle"
+        >
+          Coursera
+        </h4>
+        <br />
+        <div>
+          <Button
+            key={null} // eslint-disable-line react/no-array-index-key
+            variant="outlined"
+            color="default"
+            target="_blank"
+            href={"https://coursera.org/share/94d0e606ada134b86d069c9775d7a1c2"}
+          >
+            SEE CREDENTIAL
+          </Button>
+        </div>
+      </VerticalTimelineElement>
+      <VerticalTimelineElement
+        className="vertical-timeline-element--work"
         contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
         contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
         date="2018 - present"

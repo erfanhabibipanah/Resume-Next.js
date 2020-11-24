@@ -5,6 +5,7 @@ import footerStyle from "./footer.module.css";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import InstagramIcon from "../../public/images/svg/instagram.svg";
 import TelegramIcon from "@material-ui/icons/Telegram";
+import GmailIcon from "../../public/images/svg/gmail.svg";
 
 const Footer = () => {
   return (
@@ -51,7 +52,7 @@ const Footer = () => {
             href="https://www.instagram.com/erfan.habibipanah/"
             target="_blank"
             className={`mx-1 ${footerStyle.a}`}
-            style={{ marginTop: "1px", width: "1.3rem" }}
+            style={{ marginTop: "3px", width: "1.3rem", marginRight: "-1px" }}
           >
             <InstagramIcon />
           </a>
@@ -63,6 +64,15 @@ const Footer = () => {
             style={{ marginTop: "-2px" }}
           >
             <TelegramIcon style={{ color: "#0088cc" }} />
+          </a>
+          <a
+            rel="preconnect"
+            href="mailto:erfanhabibipanah@gmail.com"
+            target="_blank"
+            className={`w-6 mx-1 ${footerStyle.a}`}
+            style={{ marginTop: "2px" }}
+          >
+            <GmailIcon />
           </a>
         </div>
       </div>
