@@ -20,7 +20,7 @@
     "next-seo": "^4.15.1",
     "prop-types": "^15.7.2",
     "react": "^16.14.0",
-    "react-dom": "^16.13.1",
+    "react-dom": "^16.14.0",
     "react-fake-code-typing": "^1.1.2",
     "react-ga": "^3.2.0",
     "react-helmet": "^6.1.0",
