@@ -8,9 +8,43 @@ import WordpressIcon from "../../public/images/svg/wordpress.svg";
 import ReactIcon from "../../public/images/svg/react.svg";
 import NextIcon from "../../public/images/svg/nextjs.svg";
 
-const TimeLineSite = () => {
+const TimeLineProjects = () => {
   return (
     <VerticalTimeline>
+      <VerticalTimelineElement
+        className="vertical-timeline-element--education"
+        date="Jan 2021"
+        iconStyle={{ background: "rgb(97, 218, 251)", color: "#fff" }}
+        icon={<ReactIcon />}
+      >
+        <h3
+          style={{ fontSize: "24px" }}
+          className="vertical-timeline-element-title"
+        >
+          Twitter Clone
+        </h3>
+        <h4
+          style={{ fontWeight: "500" }}
+          className="vertical-timeline-element-subtitle"
+        >
+          React Project
+        </h4>
+        <br />
+        Twitter Clone using React.
+        <br />
+        <br />
+        <div>
+          <Button
+            key={null} // eslint-disable-line react/no-array-index-key
+            variant="outlined"
+            color="default"
+            target="_blank"
+            href={"https://twitter-clone.erfanhabibipanah.vercel.app/"}
+          >
+            VISIT WEBSITE
+          </Button>
+        </div>
+      </VerticalTimelineElement>
       <VerticalTimelineElement
         className="vertical-timeline-element--education sm:fixed"
         date="Nov 2020"
@@ -53,7 +87,7 @@ const TimeLineSite = () => {
           React Project
         </h4>
         <br />
-        A react site for TODO List.
+        TODO List using React.
         <br />
         <br />
         <div>
@@ -106,4 +140,4 @@ const TimeLineSite = () => {
   );
 };
 
-export default TimeLineSite;
+export default TimeLineProjects;

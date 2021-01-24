@@ -1,7 +1,7 @@
 import Header from "../components/Header/header";
 import Footer from "../components/Footer/footer";
 import { useState } from "react";
-import TimeLineSite from "../components/TimeLine/timeLineSite";
+import TimeLineProjects from "../components/TimeLine/TimeLineProjects";
 import sitesStyle from "../styles/sites.module.css";
 import Meta from "../components/SEO/seo-meta";
 
@@ -21,7 +21,7 @@ const Sites = () => {
         className={`${padding ? "" : sitesStyle.paddingMobile}`}
         style={{ height: "100%", overflow: "hidden" }}
       >
-        <TimeLineSite />
+        <TimeLineProjects />
         <div style={{ paddingBottom: "150px" }} />
       </div>
       <Footer />
