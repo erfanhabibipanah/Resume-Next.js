@@ -5,6 +5,7 @@ import DotsProgress from "./dotProgress";
 import styles from "./languageAndHobbies.module.css";
 import SportsEsportsIcon from "@material-ui/icons/SportsEsports";
 import SportsSoccerIcon from "@material-ui/icons/SportsSoccer";
+import TheatersIcon from "@material-ui/icons/Theaters";
 import AirplanemodeActiveIcon from "@material-ui/icons/AirplanemodeActive";
 import RestaurantIcon from "@material-ui/icons/Restaurant";
 
@@ -151,7 +152,7 @@ const LanguagesAndHobbies = () => {
                     styles.ResumeLanguagesAndHobbiesBlockhobbybackdescription
                   }
                 >
-                  Playing Video games like Fifa
+                  Playing Video games like Fifa, Call Of Duty in ps4 or mobile
                 </div>
               </CardContent>
             </Card>
@@ -235,7 +236,34 @@ const LanguagesAndHobbies = () => {
                     styles.ResumeLanguagesAndHobbiesBlockhobbybackdescription
                   }
                 >
-                  I Love eating delicious food.
+                  I Love eating delicious food and I like to test new foods.
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+        <div className={styles.ResumeLanguagesAndHobbiesBlockhobbycontainer}>
+          <div className={styles.ResumeLanguagesAndHobbiesBlockhobby}>
+            <Card
+              className={styles.ResumeLanguagesAndHobbiesBlockhobbyfront}
+              style={{ backgroundColor: "rgb(33, 150, 243)" }}
+            >
+              <CardContent>
+                <TheatersIcon fontSize="large" style={{ color: "white" }} />
+                <h4 style={{ color: "#ffffff" }}>Movie/Series</h4>
+              </CardContent>
+            </Card>
+            <Card
+              className={styles.ResumeLanguagesAndHobbiesBlockhobbyback}
+              style={{ color: "#ffffff", backgroundColor: "rgb(33, 150, 243)" }}
+            >
+              <CardContent>
+                <div
+                  className={
+                    styles.ResumeLanguagesAndHobbiesBlockhobbybackdescription
+                  }
+                >
+                  Most of the time I watch series and often see a movie.
                 </div>
               </CardContent>
             </Card>

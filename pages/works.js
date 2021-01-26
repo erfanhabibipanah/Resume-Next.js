@@ -8,7 +8,7 @@ import Meta from "../components/SEO/seo-meta";
 const siteTitle = "Erfan's Projects";
 const siteDescription =
   "I am Erfan Habibi Panah Fard and This is showcase of my projects";
-const url = "https://www.erfanhabibipanah.dev/sites";
+const url = "https://www.erfanhabibipanah.dev/works";
 const name = "Erfan Habibi Panah Fard";
 
 const Sites = () => {

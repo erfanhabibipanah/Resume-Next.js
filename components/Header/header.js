@@ -20,7 +20,7 @@ const Header = ({ isActive }) => {
       setIsSites(false);
       setIsEducation(false);
       setIsContact(false);
-    } else if (window.location.pathname === "/projects") {
+    } else if (window.location.pathname === "/works") {
       setIsHome(false);
       setIsSites(true);
       setIsEducation(false);
@@ -80,14 +80,14 @@ const Header = ({ isActive }) => {
           </div>
           <nav className="hidden md:flex space-x-10">
             <div className="relative">
-              <Link href="/projects">
+              <Link href="/works">
                 <button
                   type="button"
                   className={`${
                     isSites ? "text-gray-900" : "text-gray-500"
                   } group inline-flex items-center space-x-2 text-base leading-6 font-medium hover:text-gray-900 focus:outline-none focus:text-gray-900 active:text-gray-900 transition ease-in-out duration-150`}
                 >
-                  <span>Projects</span>
+                  <span>Works</span>
                 </button>
               </Link>
             </div>
@@ -165,14 +165,14 @@ const Header = ({ isActive }) => {
             </div>
             <div className="py-6 px-5 space-y-6 bg-gray-100">
               <div className="grid grid-cols-2 gap-y-4 gap-x-8">
-                <Link href="/projects">
+                <Link href="/works">
                   <button
                     type="button"
                     className={`${
                       isSites ? "text-gray-900" : "text-gray-500"
                     } text-base leading-6 font-medium hover:text-gray-900 transition ease-in-out duration-150`}
                   >
-                    <span>Projects</span>
+                    <span>Works</span>
                   </button>
                 </Link>
                 <Link href="/education">

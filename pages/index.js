@@ -38,21 +38,42 @@ export default function Home({ allPostsData }) {
         <section className={utilStyles.headingMd}>
           <br />
           <span>
-            I’m a Front-end developer and I have experienced in React.js,
-            Next.js, JavaScript, Python, HTML, CSS, WordPress, C, C++.
+            I’m a Front-end developer. I'm fluent in JavaScript, React.js,
+            Next.js and I’m passionate about learning TypeScript, GraphQL, and
+            Node.js.
           </span>
           <br />
           <br />
           <span>
-            I have experience in web designing (UI/UX), and I know how to work
-            with Adobe Photoshop and Adobe Illustrator.
+            I have done some self projects and cloned websites such as Spotify,
+            Twitter, Instagram, etc., which they're all in my GitHub account and
+            in my portfolio website. I have experienced in creating websites
+            with WordPress which you can see the preview link of them in my
+            portfolio.
           </span>
           <br />
           <br />
           <span>
             As an undergraduate student, I like to work and improve my skills
-            besides my academic studies and my self-studies. I'm also a
-            multitasker and learn things quickly.
+            and my self-studies besides my academic studies which now I'm
+            studying Electrical Engineering at one of the best universities in
+            Tehran/Iran.
+          </span>
+          <br />
+          <br />
+          <span>
+            I have experience in the Machine Learning field and pass some
+            courses and have been in a group that works on neuroscience. In the
+            past year, we accomplished that to published two paper articles in
+            BCI(Brain Computer Interface).
+          </span>
+          <br />
+          <br />
+          <span>
+            I'm also a multitasker and learn things quickly and looking for a
+            real life job, I'm adept in various social media platforms and
+            office technology programs and committed to utilizing my skills to
+            further the mission of a company.
           </span>
           <br />
         </section>

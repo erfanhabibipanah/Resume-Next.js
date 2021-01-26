@@ -4,7 +4,7 @@ import Avatar from "@material-ui/core/Avatar";
 import React from "react";
 import skillStyles from "./skill.module.css";
 import JavascriptIcon from "../../../public/images/svg/javascript.svg";
-import WordpressIcon from "../../../public/images/svg/wordpress.svg";
+import HTMLIcon from "../../../public/images/svg/html5.svg";
 import ReactIcon from "../../../public/images/svg/react.svg";
 import OtherIcon from "../../../public/images/svg/code.svg";
 
@@ -54,27 +54,27 @@ const Skill = () => {
           <CardContent>
             <Avatar
               style={{
-                color: "rgb(33, 117, 155)",
-                backgroundColor: "rgb(33, 117, 155)",
+                backgroundColor: "rgb(227, 76, 38)",
                 width: 100,
                 height: 100,
                 margin: "0 auto",
               }}
             >
-              <WordpressIcon />
+              <HTMLIcon />
             </Avatar>
             <br />
-            <h3 style={{ color: "rgb(33, 117, 155)" }}>Wordpress</h3>
+            <h3 style={{ color: "rgb(227, 76, 38)" }}>HTML5</h3>
             <br />
-            <div>Theme</div>
-            <div>Plugins</div>
+            <div>CSS3</div>
+            <div>Sass</div>
+            <div>Photoshop</div>
+            <div>Adobe Illustrator</div>
           </CardContent>
         </Card>
         <Card style={{ padding: "16px 24px 24px 24px" }}>
           <CardContent>
             <Avatar
               style={{
-                color: "rgb(241, 222, 60)",
                 backgroundColor: "rgb(241, 222, 60)",
                 width: 100,
                 height: 100,
@@ -86,15 +86,16 @@ const Skill = () => {
             <br />
             <h3 style={{ color: "rgb(241, 222, 60)" }}>Javascript</h3>
             <br />
-            <div>React</div>
-            <div>ES6</div>
+            <div>Es6</div>
+            <div>Es7,8</div>
+            <div>TypeScript</div>
+            <div>Node.js</div>
           </CardContent>
         </Card>
         <Card style={{ padding: "16px 24px 24px 24px" }}>
           <CardContent>
             <Avatar
               style={{
-                color: "rgb(97, 218, 251)",
                 backgroundColor: "rgb(97, 218, 251)",
                 width: 100,
                 height: 100,
@@ -108,13 +109,15 @@ const Skill = () => {
             <br />
             <div>React.js</div>
             <div>Next.js</div>
+            <div>Redux</div>
+            <div>Gatsby</div>
           </CardContent>
         </Card>
         <Card style={{ padding: "16px 24px 24px 24px" }}>
           <CardContent>
             <Avatar
               style={{
-                backgroundColor: "rgb(227, 76, 38)",
+                backgroundColor: "rgb(114, 206, 153)",
                 width: 100,
                 height: 100,
                 margin: "0 auto",
@@ -123,11 +126,12 @@ const Skill = () => {
               <OtherIcon />
             </Avatar>
             <br />
-            <h3 style={{ color: "rgb(227, 76, 38)" }}>Other</h3>
+            <h3 style={{ color: "rgb(114, 206, 153)" }}>Other</h3>
             <br />
-            <div>HTML</div>
-            <div>CSS</div>
+            <div>GraphQL</div>
+            <div>MySQL</div>
             <div>Python</div>
+            <div>Wordpress</div>
           </CardContent>
         </Card>
         <Card style={{ padding: "16px 24px 24px 24px", display: "none" }} />

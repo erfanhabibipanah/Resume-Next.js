@@ -138,6 +138,41 @@ const TimeLineProjects = () => {
       </VerticalTimelineElement>
       <VerticalTimelineElement
         className="vertical-timeline-element--education"
+        date="Apr 2020 - May 2020"
+        iconStyle={{ background: "rgb(33, 117, 155)", color: "#fff" }}
+        icon={<WordpressIcon />}
+      >
+        <h3
+          style={{ fontSize: "24px" }}
+          className="vertical-timeline-element-title"
+        >
+          Iran FreeStyleLibre Site
+        </h3>
+        <h4
+          style={{ fontWeight: "500" }}
+          className="vertical-timeline-element-subtitle"
+        >
+          WordPress Project
+        </h4>
+        <br />
+        Showcase website of the iran-freestylelibre built with WordPress in
+        Farsi.
+        <br />
+        <br />
+        <div>
+          <Button
+            key={null} // eslint-disable-line react/no-array-index-key
+            variant="outlined"
+            color="default"
+            target="_blank"
+            href={"https://www.iran-freestylelibre.ir/"}
+          >
+            VISIT WEBSITE
+          </Button>
+        </div>
+      </VerticalTimelineElement>
+      <VerticalTimelineElement
+        className="vertical-timeline-element--education"
         date="Nov 2019 - Feb 2020"
         iconStyle={{ background: "rgb(33, 117, 155)", color: "#fff" }}
         icon={<WordpressIcon />}
