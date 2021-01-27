@@ -139,7 +139,7 @@ const LanguagesAndHobbies = () => {
                   fontSize="large"
                   style={{ color: "white" }}
                 />
-                <h4 style={{ color: "#ffffff" }}>Game</h4>
+                <h4 style={{ color: "#ffffff" }}>Games</h4>
               </CardContent>
             </Card>
             <Card
@@ -196,7 +196,7 @@ const LanguagesAndHobbies = () => {
                   fontSize="large"
                   style={{ color: "white" }}
                 />
-                <h4 style={{ color: "#ffffff" }}>Trips</h4>
+                <h4 style={{ color: "#ffffff" }}>Travelling</h4>
               </CardContent>
             </Card>
             <Card
@@ -222,35 +222,8 @@ const LanguagesAndHobbies = () => {
               style={{ backgroundColor: "rgb(33, 150, 243)" }}
             >
               <CardContent>
-                <RestaurantIcon fontSize="large" style={{ color: "white" }} />
-                <h4 style={{ color: "#ffffff" }}>Eating</h4>
-              </CardContent>
-            </Card>
-            <Card
-              className={styles.ResumeLanguagesAndHobbiesBlockhobbyback}
-              style={{ color: "#ffffff", backgroundColor: "rgb(33, 150, 243)" }}
-            >
-              <CardContent>
-                <div
-                  className={
-                    styles.ResumeLanguagesAndHobbiesBlockhobbybackdescription
-                  }
-                >
-                  I Love eating delicious food and I like to test new foods.
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-        <div className={styles.ResumeLanguagesAndHobbiesBlockhobbycontainer}>
-          <div className={styles.ResumeLanguagesAndHobbiesBlockhobby}>
-            <Card
-              className={styles.ResumeLanguagesAndHobbiesBlockhobbyfront}
-              style={{ backgroundColor: "rgb(33, 150, 243)" }}
-            >
-              <CardContent>
                 <TheatersIcon fontSize="large" style={{ color: "white" }} />
-                <h4 style={{ color: "#ffffff" }}>Movie/Series</h4>
+                <h4 style={{ color: "#ffffff" }}>Watching Movie/Series</h4>
               </CardContent>
             </Card>
             <Card
