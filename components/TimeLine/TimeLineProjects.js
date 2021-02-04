@@ -13,6 +13,42 @@ const TimeLineProjects = () => {
     <VerticalTimeline>
       <VerticalTimelineElement
         className="vertical-timeline-element--education"
+        date="Feb 2021"
+        iconStyle={{ background: "rgb(97, 218, 251)", color: "#fff" }}
+        icon={<ReactIcon />}
+      >
+        <h3
+          style={{ fontSize: "24px" }}
+          className="vertical-timeline-element-title"
+        >
+          Robinhood Traiding App Clone
+        </h3>
+        <h4
+          style={{ fontWeight: "500" }}
+          className="vertical-timeline-element-subtitle"
+        >
+          React Project
+        </h4>
+        <br />
+        Robinhood Traiding App Clone using React.
+        <br />
+        <br />
+        <div>
+          <Button
+            key={null} // eslint-disable-line react/no-array-index-key
+            variant="outlined"
+            color="default"
+            target="_blank"
+            href={
+              "https://robinhood-trading-app-clone.erfanhabibipanah.vercel.app/"
+            }
+          >
+            VISIT WEBSITE
+          </Button>
+        </div>
+      </VerticalTimelineElement>
+      <VerticalTimelineElement
+        className="vertical-timeline-element--education"
         date="Jan 2021"
         iconStyle={{ background: "rgb(97, 218, 251)", color: "#fff" }}
         icon={<ReactIcon />}
